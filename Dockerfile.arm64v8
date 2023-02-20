@@ -1,0 +1,67 @@
+FROM ros:humble-ros-base@sha256:3c92912c2fc0b0799cd512de2ce82a80d233d66d4ffe1e8448f5104435db52fc
+
+# ARGS?
+ARG PKG_NAME=sonia_common_ros2
+ARG BUILD_DATE
+ARG VERSION
+
+LABEL maintainer="club.sonia@etsmtl.net"
+LABEL net.etsmtl.sonia-auv.base_lib.build-date=${BUILD_DATE}
+LABEL net.etsmtl.sonia-auv.base_lib.version=${VERSION}
+LABEL net.etsmtl.sonia-auv.base_lib.name=${PKG_NAME}
+
+# Common Env
+ENV SONIA_USER=${SONIA_USER}
+ENV SONIA_HOME=/root
+ENV SONIA_UID=${SONIA_UID}
+ENV ROS_WS_SETUP=/opt/ros/${ROS_DISTRO}/setup.bash
+
+# ENV FOR BASE LIB
+ENV WS_PATH=${SONIA_HOME}/sonia_ws_ros2
+ENV WS_SETUP=${WS_PATH}/install/setup.bash
+ENV PKG_NAME=${PKG_NAME}
+ENV LIB_PATH=${WS_PATH}/src/${PKG_NAME}
+
+# install sudo and git
+RUN apt update && apt install sudo git -y
+
+# Set up locale 
+RUN sudo apt update && sudo apt install locales -y
+RUN sudo locale-gen en_US en_US.UTF-8
+RUN sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+ENV LANG=en_US.UTF-8
+
+# Set up sources
+RUN sudo apt install software-properties-common -y
+RUN sudo add-apt-repository universe -y
+
+RUN sudo apt update && sudo apt install curl
+RUN sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+# Install ROS Stuff
+
+RUN sudo apt update && sudo apt upgrade -y
+RUN sudo apt install ros-dev-tools \
+                     python3-colcon-common-extensions \
+                     python3-pip -y
+
+RUN python3 -m pip install setuptools==58.2.0
+
+USER root
+
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
+
+RUN mkdir -p ${WS_PATH}/src
+
+COPY . ${LIB_PATH}
+
+WORKDIR ${WS_PATH}
+
+RUN . /opt/ros/humble/setup.sh && colcon build 
+
+RUN echo "source /root/sonia_ws_ros2/install/setup.bash" >> ~/.bashrc
+
+
+
