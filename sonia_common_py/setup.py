@@ -20,7 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "talker = sonia_common_py.publisher_member_function:main",
         ],
     },
 )

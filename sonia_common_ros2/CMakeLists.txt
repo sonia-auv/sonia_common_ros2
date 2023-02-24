@@ -7,10 +7,29 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+add_executable(global_parameter_server src/global_parameter_server_node.cpp)
+ament_target_dependencies(global_parameter_server rclcpp)
+
+install(TARGETS
+  global_parameter_server
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}
+)
 
 # rosidl_generate_interfaces(${PROJECT_NAME}
 #   "msg/Num.msg"

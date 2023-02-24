@@ -1,0 +1,7 @@
+global_parameter_server:
+  ros__parameters:
+    topics:
+      depth_sensor:
+        depth: "/depth_sensor/depth"
+        press: "/depth_sensor/press"
+        temp: "/depth_sensor/temp"
