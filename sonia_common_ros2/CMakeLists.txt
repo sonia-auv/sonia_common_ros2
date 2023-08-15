@@ -13,11 +13,11 @@ find_package(rosidl_default_generators REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-add_executable(global_parameter_server src/global_parameter_server_node.cpp)
-ament_target_dependencies(global_parameter_server rclcpp)
+# add_executable(global_parameter_server src/global_parameter_server_node.cpp)
+# ament_target_dependencies(global_parameter_server rclcpp)
 
 install(TARGETS
-  global_parameter_server
+  # global_parameter_server
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -31,12 +31,15 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   "msg/Num.msg"
-#   "msg/Sphere.msg"
-#   "srv/AddThreeInts.srv"
-#   DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
-# )
+file(GLOB msg_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg")
+file(GLOB srv_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv")
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  # "srv/AddThreeInts.srv"
+  # DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

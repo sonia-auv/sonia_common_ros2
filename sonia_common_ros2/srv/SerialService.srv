@@ -1,0 +1,10 @@
+
+sonia_common_ros2/SerialMessage data
+---
+uint8 SUCCESS = 0
+uint8 FAILED = 1
+uint8 NO_RESPONSE = 2
+uint8 CONNECTION_FAILED = 3
+
+uint8 status
+sonia_common_ros2/SerialMessage data
