@@ -51,12 +51,12 @@ namespace sonia_cpp
         /// @param count The number of packets to read.
         /// @param pData Char array that will store the received data.
         /// @return Status of the received packaet as a byte code.
-        ssize_t ReadPackets(size_t count, char *pData);
+        ssize_t ReadPackets(size_t count, uint8_t *pData);
 
         /// @brief Read one packet from the serial stream.
         /// @param pData Char array to store the data.
         /// @param offset Stream offset.
-        ssize_t ReadOnce(char *pData, int offset);
+        ssize_t ReadOnce(uint8_t *pData, int offset);
 
         /// @brief Flush the stream.
         void Flush();
@@ -70,7 +70,7 @@ namespace sonia_cpp
         /// @param pData Char data array to send.
         /// @param length Length of the data array.
         /// @return Byte Status Code.
-        ssize_t Transmit(const char *pData, size_t length);
+        ssize_t Transmit(const uint8_t *pData, size_t length);
 
         bool OpenPort();
 

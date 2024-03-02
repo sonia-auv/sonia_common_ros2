@@ -17,14 +17,14 @@ namespace sonia_cpp
         close(m_fd);
     }
 
-    ssize_t SerialConn::ReadPackets(size_t count, char *pData)
+    ssize_t SerialConn::ReadPackets(size_t count, uint8_t *pData)
     {
         pData[0] = 0;
 
         return read(m_fd, pData, count);
     }
 
-    ssize_t SerialConn::ReadOnce(char *pData, int offset)
+    ssize_t SerialConn::ReadOnce(uint8_t *pData, int offset)
     {
         return read(m_fd, (pData + offset), 1);
     }
@@ -39,7 +39,7 @@ namespace sonia_cpp
         return write(m_fd, data.c_str(), data.size());
     }
 
-    ssize_t SerialConn::Transmit(const char *pData, size_t length)
+    ssize_t SerialConn::Transmit(const uint8_t *pData, size_t length)
     {
         return write(m_fd, pData, length);
     }
