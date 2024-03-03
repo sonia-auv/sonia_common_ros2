@@ -1,7 +1,8 @@
 #include "SerialConn.h"
 #include <fcntl.h>
 #include <unistd.h>
-namespace sonia_cpp
+
+namespace sonia_common_cpp
 {
     SerialConn::SerialConn(std::string port, speed_t baud) : m_port(port), m_baud(baud), m_is_blocking(true)
     {

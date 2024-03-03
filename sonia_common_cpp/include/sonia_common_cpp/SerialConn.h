@@ -30,7 +30,7 @@
 #include <termios.h>
 #include <unistd.h>
 
-namespace sonia_cpp
+namespace sonia_common_cpp
 {
 
     class SerialConn
