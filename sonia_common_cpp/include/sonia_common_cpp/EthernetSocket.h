@@ -1,7 +1,6 @@
 #pragma once   
 
 #include <string>
-#include <unistd.h>
 #include <vector>
 #include <sys/socket.h>
 #include <arpa/inet.h>
@@ -15,8 +14,8 @@ namespace sonia_common_cpp
             EthernetSocket();
             ~EthernetSocket();
 
-            void Connect(std::string address, int port);
-            void Recieve();
+            bool Connect(std::string address, int port);
+            bool Recieve();
             uint8_t GetRawData();
             
         private:
