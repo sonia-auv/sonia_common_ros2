@@ -11,7 +11,7 @@ namespace sonia_common_cpp
 
     }
 
-    EthernetSocket::bool Connect(std::string address, int port)
+    bool EthernetSocket::Connect(std::string address, int port)
     {
         struct sockaddr_in server;
 
@@ -21,25 +21,25 @@ namespace sonia_common_cpp
         server.sin_family = AF_INET;
         server.sin_port = htons(port);
 
-        if(connect(_socket, (Struct sockaddr*) &server, sizeof(server))<0)
+        if(connect(_socket, (struct sockaddr *) &server, sizeof(server))<0)
         {
             return false;
         }
         return true;
     }
 
-    EthernetSocket::bool Recieve()
+    bool EthernetSocket::Recieve()
     {
-        if(recv(_socket, _data, _data.length(), 0)<0)
+        if(recv(_socket, &_data, _data.size(), 0)<0)
         {
             return false;
         }
         return true;
     }
 
-    EthernetSocket::uint8_t GetRawData()
+    std::vector<uint8_t> EthernetSocket::GetRawData()
     {
-        return 0;
+        return _data;
     }
 
 }
