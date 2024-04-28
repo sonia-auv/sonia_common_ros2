@@ -1,4 +1,4 @@
-#include "sonia_common_cpp/EthernetSocket.h"
+#include "EthernetSocket.h"
 
 namespace sonia_common_cpp
 {
@@ -38,10 +38,10 @@ namespace sonia_common_cpp
     }
     bool EthernetSocket::Send()
     {
-        if(send(_socket, &_data, data.size(),0)<0){
+        if(send(_socket, &_data, _data.size(),0)<0){
             return true;
         }
-        return false
+        return false;
     }
 
     std::vector<uint8_t> EthernetSocket::GetRawData()
