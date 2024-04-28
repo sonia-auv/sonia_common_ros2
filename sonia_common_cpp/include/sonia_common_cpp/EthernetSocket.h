@@ -16,7 +16,7 @@ namespace sonia_common_cpp
 
             bool Connect(std::string address, int port);
             bool Recieve();
-            bool Send();
+            bool Send(std::vector<uint8_t> data);
 
             std::vector<uint8_t> GetRawData();
             

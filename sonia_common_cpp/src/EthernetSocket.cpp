@@ -36,9 +36,9 @@ namespace sonia_common_cpp
         }
         return true;
     }
-    bool EthernetSocket::Send()
+    bool EthernetSocket::Send(std::vector<uint8_t> data)
     {
-        if(send(_socket, &_data, _data.size(),0)<0){
+        if(send(_socket, &data, data.size(),0)<0){
             return true;
         }
         return false;
