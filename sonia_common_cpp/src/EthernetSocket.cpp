@@ -13,7 +13,7 @@ namespace sonia_common_cpp
 
     bool EthernetSocket::ConnectTCP(std::string address, int port)
     {
-        
+        memset(&_server,0,sizeof(_server));
         _server.sin_addr.s_addr= inet_addr(address.c_str());
         _server.sin_family = AF_INET;
         _server.sin_port = htons(port);
@@ -27,6 +27,7 @@ namespace sonia_common_cpp
     }
     bool EthernetSocket::ConnectUDP(int port)
     {
+        memset(&_server,0,sizeof(_server));
         _server.sin_addr.s_addr= htonl(INADDR_ANY);
         _server.sin_family = AF_INET;
         _server.sin_port = htons(port);
