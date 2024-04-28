@@ -1,4 +1,4 @@
-#include "sonia_common_ros2/EthernetSocket.h"
+#include "sonia_common_cpp/EthernetSocket.h"
 
 namespace sonia_common_cpp
 {
