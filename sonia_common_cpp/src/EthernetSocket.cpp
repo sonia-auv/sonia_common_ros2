@@ -41,7 +41,7 @@ namespace sonia_common_cpp
 
     }
 
-    bool EthernetSocket::Recieve()
+    bool EthernetSocket::Receive()
     {
         socklen_t len = sizeof(_dvl);
         if(recvfrom(_socketUDP, &_data, _data.size(),0,(struct sockaddr*)&_dvl, &len)<0)
