@@ -1,0 +1,14 @@
+{
+  "package_name": "sonia_common_ros2",
+  "non_idl_tuples": [
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/KillStatus.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/MissionStatus.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/ObstacleArray.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/ObstacleInfo.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/Pose.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/PoseArray.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:msg/SerialMessage.msg",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:srv/DropperService.srv",
+    "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2:srv/SerialService.srv"
+  ]
+}

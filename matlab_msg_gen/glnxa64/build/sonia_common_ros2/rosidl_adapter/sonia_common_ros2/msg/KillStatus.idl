@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sonia_common_ros2/msg/KillStatus.msg
+// generated code does not contain a copyright notice
+
+
+module sonia_common_ros2 {
+  module msg {
+    struct KillStatus {
+      boolean status;
+    };
+  };
+};

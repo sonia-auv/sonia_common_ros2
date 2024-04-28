@@ -1,0 +1,1048 @@
+[0.000000] (-) TimerEvent: {}
+[0.001759] (sonia_common_ros2) JobQueued: {'identifier': 'sonia_common_ros2', 'dependencies': OrderedDict()}
+[0.001833] (sonia_common_ros2) JobStarted: {'identifier': 'sonia_common_ros2'}
+[0.030669] (sonia_common_ros2) JobProgress: {'identifier': 'sonia_common_ros2', 'progress': 'cmake'}
+[0.032442] (sonia_common_ros2) JobProgress: {'identifier': 'sonia_common_ros2', 'progress': 'build'}
+[0.032547] (sonia_common_ros2) Command: {'cmd': ['/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake', '--build', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2', '--', '-j8', '-l8'], 'cwd': '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('VSCODE_CWD', '/home/nimai/ros2_sonia_ws/src/control_library'), ('LANGUAGE', 'en_CA:en'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'nimai'), ('SNAP_COMMON', '/var/snap/code/common'), ('ROS_MAVEN_DEPLOYMENT_REPOSITORY', '/home/nimai/.m2/repository/'), ('LOCAL_PYTHON_VENV_PATH', '/home/nimai/.matlab/R2024a/ros2/glnxa64/venv'), ('VSCODE_NLS_CONFIG', '{"locale":"en-gb","osLocale":"en-ca","availableLanguages":{},"_languagePackSupport":true}'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('MATLAB_LOG_DIR', '/tmp/matlabls_36804'), ('GIO_MODULE_DIR', '/home/nimai/snap/code/common/.cache/gio-modules'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CUSTOM_AMENT_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('XDG_SESSION_TYPE', 'wayland'), ('SNAP_UID', '1000'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2024a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2024a/sys/opengl/lib/glnxa64:/usr/local/MATLAB/R2024a/sys/os/glnxa64:/usr/local/MATLAB/R2024a/bin/glnxa64:/home/nimai/.MathWorks/sjIU_JBHMpDfD2I6PVGUzD1UvwcpVSfTWaVgy57sVOE/bin/glnxa64:/usr/local/MATLAB/R2024a/extern/lib/glnxa64:/usr/local/MATLAB/R2024a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2024a/runtime/glnxa64:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/server:/home/nimai/ros2_sonia_ws/install/sonia_common_ros2/lib:/home/nimai/ros2_sonia_ws/install/sonia_common_cpp/lib:/home/nimai/ros2_sonia_ws/install/btcpp_ros2_interfaces/lib:/home/nimai/ros2_sonia_ws/install/behaviortree_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BASEMATLABPATH', ''), ('HOME', '/home/nimai'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2024a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2024a/bin/glnxa64/ld_shim.so.2.35.ubuntu_22_04'), ('SNAP_USER_DATA', '/home/nimai/snap/code/157'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4851b5d9-1.88-main.sock'), ('GTK_IM_MODULE_FILE', '/home/nimai/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('ELECTRON_NO_ASAR', '1'), ('ROS_IP', '10.192.164.236'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '933'), ('SYSTEMD_EXEC_PID', '1320'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '157'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '35465'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('MWAPIKEY', 'bVU8GKr.qEE~~mIVkDIqqQKPe9LNm1cuvxE8eduffQ_HOLqo-1PMCJB8IVGGSBFWPXSzdjqj5Zck~rif.oHtpUMPBWMirqE~oaoteiDy03mtcrjyEIBRa86iL5Zs0AyusN27fHmxB-BU7hkPV05J6cdbNa9X1L2GKORWxtlmC6TRLc3Ea2o~NHbvfrlmA02DfHh0fRshhy4YCeL2dE8aV9bpS3Ed1r0P3Ta9F5TkB9boUMaahuK0T1K7sldnP_myP9Zsmj~F0JiQzlobYUs7oG2d48mFniCFVwBWXQqwfqE2DkgtJ5GlqJrDXzmdQg4WNj.BEO4VzY4aD7Zgd__vuOpyYRw6iPiaBWxa4qkoTftee60Bi0lf2~2TGOJMsizE63U3m.mNAkViDK5-AumurnhU.iqcN3CJ6d3Rxt1CfYGy9eQ7PzBx-CCOsukceuFvQ5ot5GHmneRfKg0BnyPyg~FHtss92Fk.eE_igAQ-CrvVjxQhNZSFgamYUsajdyDPcLSmFD.wIMONJ5JZ7MK7a3hmQkudu9soighEJQiWOf15Lc~pd9dpOqF~5bBekXWWbkMvaaM2A08DIlFTKwmq3hwdDurcNonfT114qRy-_B8qrEkXi_7BiIwxUP1u.6-K6enOBmpt4g9Dg21TmJnxEXW.F-uRjZCDYZqfDJTyfXi6HctorsO9qSPFJVQm32LdWRqM4Mrc2I8Om20LFwIg2PrycW0Z0B5kNySF5ZaokHFGTEY4_Ea0tcYUQOhDh137on5~21mdx45sRjU-GBGmaWfrnZAPlHJY6EIjyBcD9~ZswjW8TBp_qMW~_JPMGVOvrT8xYW.7lkutO9J8ryLWR3f5osq6c4KM24mg2t3MbO8OkB5Nzy.N1_W7Dd_1l93PwiBb6FUwAs~EqyjoUTMod3eIj2wrXJwkhk8YzTaPIar4wMS7dZgdfR.PI24QlhyFPKmcJtAzHuZKfVVq2Rot9oeUiVM.JWrOAiuDhDdcraNbNAT40ClY~3Cwcw8ooPiJ'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nimai'), ('MATLAB_MEM_MGR_VALUE', ''), ('ROS_WS_SETUP', '/opt/ros/humble/setup.bash'), ('SNAP_CONTEXT', 'dweeeN9gGlfCbhmsGyC6Kvhu3YkLnoaHvJ1HEDWbVqxLLZU8TS8U'), ('JOURNAL_STREAM', '8:31781'), ('_', '/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', 'e170252f'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'nimai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'code'), ('ROS_LOCALHOST_ONLY', '0'), ('AUV7_IP', '192.168.0.11'), ('AUV8_IP', '192.168.0.31'), ('PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/bin:/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin:/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64:/home/nimai/ros2_sonia_ws/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nimai-specter:@/tmp/.ICE-unix/1080,unix/nimai-specter:/tmp/.ICE-unix/1080'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('INVOCATION_ID', '787a178defe64be4829b4ac2d045d1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('SNAP_DATA', '/var/snap/code/157'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('TOOLBOX', '/usr/local/MATLAB/R2024a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PRE_LD_PRELOAD', ''), ('IBUS_DISABLE_SNOOPER', '1'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GC2JM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/nimai/snap/code/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/nimai/snap/code/157/.local/share/glib-2.0/schemas'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SNAP_COOKIE', 'dweeeN9gGlfCbhmsGyC6Kvhu3YkLnoaHvJ1HEDWbVqxLLZU8TS8U'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:243c8e21-9628-4c21-b20d-d0ef680b4e92'), ('CMAKE_PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin'), ('GDK_PIXBUF_MODULEDIR', '/snap/code/157/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('NO_AT_BRIDGE', '1'), ('ROS_MASTER_URI', 'http://localhost:11311/'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'code'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2024a/sys/openscenegraph/lib/glnxa64'), ('GDK_PIXBUF_MODULE_FILE', '/home/nimai/snap/code/common/.cache/gdk-pixbuf-loaders.cache'), ('VIRTUAL_ENV', '/home/nimai/.matlab/R2024a/ros2/glnxa64/venv'), ('SNAP_LAUNCHER_ARCH_TRIPLET', 'x86_64-linux-gnu'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('ROS_SONIA_WS', '/home/nimai/ros2_sonia_ws'), ('PWD', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/nimai'), ('VSCODE_CODE_CACHE_PATH', '/home/nimai/.config/Code/CachedData/e170252f762678dec6ca2cc69aba1570769a5d39'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/home/nimai/snap/code/157/.local/share:/home/nimai/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000117000002EA0'), ('SNAP_EUID', '1000'), ('PYTHONPATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/sonia_common_ros2/local/lib/python3.10/dist-packages:/home/nimai/ros2_sonia_ws/install/sonia_common_py/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/rqt_toolbar/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/rqt_actuator/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/code/157'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ROS_HOME', '/home/nimai/ros2_sonia_ws'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('VSCODE_PID', '35874')]), 'shell': False}
+[0.045898] (sonia_common_ros2) StdoutLine: {'line': b'\n'}
+[0.046088] (sonia_common_ros2) StdoutLine: {'line': b'[0/1] Re-running CMake...\x1b[K\n'}
+[0.056520] (sonia_common_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/ament_cmake/cmake)\n'}
+[0.099075] (-) TimerEvent: {}
+[0.155535] (sonia_common_ros2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/ament_cmake_ros/cmake)\n'}
+[0.158444] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rosidl_typesupport_c: 2.0.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/cmake)\n'}
+[0.158998] (sonia_common_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.163002] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_adapter/cmake)\n'}
+[0.199164] (-) TimerEvent: {}
+[0.200665] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rosidl_typesupport_cpp: 2.0.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_cpp/cmake)\n'}
+[0.201206] (sonia_common_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.232239] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_default_generators/cmake)\n'}
+[0.235761] (sonia_common_ros2) StdoutLine: {'line': b'-- Found class_loader: 2.2.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/class_loader/cmake)\n'}
+[0.238369] (sonia_common_ros2) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/geometry_msgs/cmake)\n'}
+[0.299282] (-) TimerEvent: {}
+[0.376381] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rclcpp/cmake)\n'}
+[0.399364] (-) TimerEvent: {}
+[0.431832] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rmw_implementation_cmake/cmake)\n'}
+[0.433658] (sonia_common_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.499456] (-) TimerEvent: {}
+[0.539007] (sonia_common_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.599546] (-) TimerEvent: {}
+[0.699786] (-) TimerEvent: {}
+[0.800046] (-) TimerEvent: {}
+[0.900306] (-) TimerEvent: {}
+[1.000585] (-) TimerEvent: {}
+[1.100805] (-) TimerEvent: {}
+[1.146348] (sonia_common_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200917] (-) TimerEvent: {}
+[1.301159] (-) TimerEvent: {}
+[1.401437] (-) TimerEvent: {}
+[1.408881] (sonia_common_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.417912] (sonia_common_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.452176] (sonia_common_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[1.459016] (sonia_common_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2\n'}
+[1.477414] (sonia_common_ros2) StdoutLine: {'line': b'\n'}
+[1.477797] (sonia_common_ros2) StdoutLine: {'line': b'[0/88] Generating C code for ROS interfaces\x1b[K\n'}
+[1.501524] (-) TimerEvent: {}
+[1.601760] (-) TimerEvent: {}
+[1.701984] (-) TimerEvent: {}
+[1.802252] (-) TimerEvent: {}
+[1.902500] (-) TimerEvent: {}
+[2.002728] (-) TimerEvent: {}
+[2.102951] (-) TimerEvent: {}
+[2.175881] (sonia_common_ros2) StdoutLine: {'line': b'[0/88] Generating C++ code for ROS interfaces\x1b[K\n'}
+[2.176561] (sonia_common_ros2) StdoutLine: {'line': b'[1/88] Generating C++ code for ROS interfaces\x1b[K\n'}
+[2.176979] (sonia_common_ros2) StdoutLine: {'line': b'[1/88] Generating C++ type support for eProsima Fast-RTPS\x1b[K\n'}
+[2.177289] (sonia_common_ros2) StdoutLine: {'line': b'[1/88] Generating C++ type support dispatch for ROS interfaces\x1b[K\n'}
+[2.203070] (-) TimerEvent: {}
+[2.281220] (sonia_common_ros2) StdoutLine: {'line': b'[1/88] Generating C++ introspection for ROS interfaces\x1b[K\n'}
+[2.282431] (sonia_common_ros2) StdoutLine: {'line': b'[2/88] Generating C code for ROS interfaces\x1b[K\n'}
+[2.283145] (sonia_common_ros2) StdoutLine: {'line': b'[2/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/kill_status__functions.c.o\x1b[K\n'}
+[2.283705] (sonia_common_ros2) StdoutLine: {'line': b'[2/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/mission_status__functions.c.o\x1b[K\n'}
+[2.285971] (sonia_common_ros2) StdoutLine: {'line': b'[2/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/obstacle_array__functions.c.o\x1b[K\n'}
+[2.286323] (sonia_common_ros2) StdoutLine: {'line': b'[2/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/obstacle_info__functions.c.o\x1b[K\n'}
+[2.303174] (-) TimerEvent: {}
+[2.403983] (-) TimerEvent: {}
+[2.473873] (sonia_common_ros2) StdoutLine: {'line': b'[2/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/pose__functions.c.o\x1b[K\n'}
+[2.474190] (sonia_common_ros2) StdoutLine: {'line': b'[3/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/kill_status__functions.c.o\x1b[K\n'}
+[2.478528] (sonia_common_ros2) StdoutLine: {'line': b'[3/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/pose_array__functions.c.o\x1b[K\n'}
+[2.478826] (sonia_common_ros2) StdoutLine: {'line': b'[4/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/obstacle_info__functions.c.o\x1b[K\n'}
+[2.481009] (sonia_common_ros2) StdoutLine: {'line': b'[4/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/srv/detail/dropper_service__functions.c.o\x1b[K\n'}
+[2.481210] (sonia_common_ros2) StdoutLine: {'line': b'[5/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/obstacle_array__functions.c.o\x1b[K\n'}
+[2.481966] (sonia_common_ros2) StdoutLine: {'line': b'[5/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/serial_message__functions.c.o\x1b[K\n'}
+[2.482273] (sonia_common_ros2) StdoutLine: {'line': b'[6/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/pose__functions.c.o\x1b[K\n'}
+[2.504076] (-) TimerEvent: {}
+[2.520121] (sonia_common_ros2) StdoutLine: {'line': b'[6/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/srv/detail/serial_service__functions.c.o\x1b[K\n'}
+[2.604183] (-) TimerEvent: {}
+[2.631015] (sonia_common_ros2) StdoutLine: {'line': b'[7/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/mission_status__functions.c.o\x1b[K\n'}
+[2.638926] (sonia_common_ros2) StdoutLine: {'line': b'[8/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/pose_array__functions.c.o\x1b[K\n'}
+[2.675811] (sonia_common_ros2) StdoutLine: {'line': b'[9/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/msg/detail/serial_message__functions.c.o\x1b[K\n'}
+[2.704278] (-) TimerEvent: {}
+[2.735203] (sonia_common_ros2) StdoutLine: {'line': b'[10/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/srv/detail/dropper_service__functions.c.o\x1b[K\n'}
+[2.735417] (sonia_common_ros2) StdoutLine: {'line': b'[11/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_generator_c.dir/rosidl_generator_c/sonia_common_ros2/srv/detail/serial_service__functions.c.o\x1b[K\n'}
+[2.765603] (sonia_common_ros2) StdoutLine: {'line': b'[11/88] Linking C shared library libsonia_common_ros2__rosidl_generator_c.so\x1b[K\n'}
+[2.765958] (sonia_common_ros2) StdoutLine: {'line': b'[12/88] Linking C shared library libsonia_common_ros2__rosidl_generator_c.so\x1b[K\n'}
+[2.766268] (sonia_common_ros2) StdoutLine: {'line': b'[12/88] Generating C type support dispatch for ROS interfaces\x1b[K\n'}
+[2.766737] (sonia_common_ros2) StdoutLine: {'line': b'[12/88] Generating C introspection for ROS interfaces\x1b[K\n'}
+[2.804380] (-) TimerEvent: {}
+[2.904709] (-) TimerEvent: {}
+[3.005029] (-) TimerEvent: {}
+[3.009187] (sonia_common_ros2) StdoutLine: {'line': b'[12/88] Generating C type support for eProsima Fast-RTPS\x1b[K\n'}
+[3.011195] (sonia_common_ros2) StdoutLine: {'line': b'[13/88] Generating C++ type support dispatch for ROS interfaces\x1b[K\n'}
+[3.011446] (sonia_common_ros2) StdoutLine: {'line': b'[13/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/kill_status__type_support.cpp.o\x1b[K\n'}
+[3.017751] (sonia_common_ros2) StdoutLine: {'line': b'[13/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/mission_status__type_support.cpp.o\x1b[K\n'}
+[3.108338] (-) TimerEvent: {}
+[3.217046] (-) TimerEvent: {}
+[3.325799] (-) TimerEvent: {}
+[3.433504] (-) TimerEvent: {}
+[3.527269] (sonia_common_ros2) StdoutLine: {'line': b'[13/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[3.527750] (sonia_common_ros2) StdoutLine: {'line': b'[14/88] Generating C++ introspection for ROS interfaces\x1b[K\n'}
+[3.533609] (-) TimerEvent: {}
+[3.549392] (sonia_common_ros2) StdoutLine: {'line': b'[14/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/kill_status__type_support.cpp.o\x1b[K\n'}
+[3.549762] (sonia_common_ros2) StdoutLine: {'line': b'[15/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[3.566620] (sonia_common_ros2) StdoutLine: {'line': b'[15/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[3.566918] (sonia_common_ros2) StdoutLine: {'line': b'[16/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/kill_status__type_support.cpp.o\x1b[K\n'}
+[3.604818] (sonia_common_ros2) StdoutLine: {'line': b'[16/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/mission_status__type_support.cpp.o\x1b[K\n'}
+[3.606507] (sonia_common_ros2) StdoutLine: {'line': b'[17/88] Generating C++ type support for eProsima Fast-RTPS\x1b[K\n'}
+[3.633715] (-) TimerEvent: {}
+[3.642450] (sonia_common_ros2) StdoutLine: {'line': b'[17/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[3.642695] (sonia_common_ros2) StdoutLine: {'line': b'[18/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/mission_status__type_support.cpp.o\x1b[K\n'}
+[3.733820] (-) TimerEvent: {}
+[3.834201] (-) TimerEvent: {}
+[3.849329] (sonia_common_ros2) StdoutLine: {'line': b'[18/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/kill_status__type_support.cpp.o\x1b[K\n'}
+[3.849643] (sonia_common_ros2) StdoutLine: {'line': b'[19/88] Generating C type support dispatch for ROS interfaces\x1b[K\n'}
+[3.934301] (-) TimerEvent: {}
+[3.975678] (sonia_common_ros2) StdoutLine: {'line': b'[19/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/kill_status__type_support.cpp.o\x1b[K\n'}
+[3.977070] (sonia_common_ros2) StdoutLine: {'line': b'[20/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/kill_status__type_support.cpp.o\x1b[K\n'}
+[4.034411] (-) TimerEvent: {}
+[4.112428] (sonia_common_ros2) StdoutLine: {'line': b'[20/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/mission_status__type_support.cpp.o\x1b[K\n'}
+[4.112691] (sonia_common_ros2) StdoutLine: {'line': b'[21/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/mission_status__type_support.cpp.o\x1b[K\n'}
+[4.134508] (-) TimerEvent: {}
+[4.229598] (sonia_common_ros2) StdoutLine: {'line': b'[21/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[4.229849] (sonia_common_ros2) StdoutLine: {'line': b'[22/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[4.234619] (-) TimerEvent: {}
+[4.333208] (sonia_common_ros2) StdoutLine: {'line': b'[22/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[4.333474] (sonia_common_ros2) StdoutLine: {'line': b'[23/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/kill_status__type_support.cpp.o\x1b[K\n'}
+[4.334693] (-) TimerEvent: {}
+[4.341212] (sonia_common_ros2) StdoutLine: {'line': b'[23/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/pose__type_support.cpp.o\x1b[K\n'}
+[4.341432] (sonia_common_ros2) StdoutLine: {'line': b'[24/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[4.368741] (sonia_common_ros2) StdoutLine: {'line': b'[24/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/pose_array__type_support.cpp.o\x1b[K\n'}
+[4.369028] (sonia_common_ros2) StdoutLine: {'line': b'[25/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/mission_status__type_support.cpp.o\x1b[K\n'}
+[4.401277] (sonia_common_ros2) StdoutLine: {'line': b'[25/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/serial_message__type_support.cpp.o\x1b[K\n'}
+[4.401551] (sonia_common_ros2) StdoutLine: {'line': b'[26/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/pose__type_support.cpp.o\x1b[K\n'}
+[4.404813] (sonia_common_ros2) StdoutLine: {'line': b'[26/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/srv/dropper_service__type_support.cpp.o\x1b[K\n'}
+[4.405170] (sonia_common_ros2) StdoutLine: {'line': b'[27/88] Generating C introspection for ROS interfaces\x1b[K\n'}
+[4.426036] (sonia_common_ros2) StdoutLine: {'line': b'[27/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/kill_status__type_support.c.o\x1b[K\n'}
+[4.426308] (sonia_common_ros2) StdoutLine: {'line': b'[28/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[4.434801] (-) TimerEvent: {}
+[4.454383] (sonia_common_ros2) StdoutLine: {'line': b'[28/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/obstacle_array__type_support.c.o\x1b[K\n'}
+[4.454612] (sonia_common_ros2) StdoutLine: {'line': b'[29/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/pose_array__type_support.cpp.o\x1b[K\n'}
+[4.457797] (sonia_common_ros2) StdoutLine: {'line': b'[29/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/mission_status__type_support.c.o\x1b[K\n'}
+[4.458552] (sonia_common_ros2) StdoutLine: {'line': b'[30/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/msg/serial_message__type_support.cpp.o\x1b[K\n'}
+[4.471635] (sonia_common_ros2) StdoutLine: {'line': b'[30/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/obstacle_info__type_support.c.o\x1b[K\n'}
+[4.472113] (sonia_common_ros2) StdoutLine: {'line': b'[31/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/srv/dropper_service__type_support.cpp.o\x1b[K\n'}
+[4.495620] (sonia_common_ros2) StdoutLine: {'line': b'[31/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/pose__type_support.c.o\x1b[K\n'}
+[4.496479] (sonia_common_ros2) StdoutLine: {'line': b'[32/88] Generating C type support for eProsima Fast-RTPS\x1b[K\n'}
+[4.502131] (sonia_common_ros2) StdoutLine: {'line': b'[32/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/mission_status__type_support_c.cpp.o\x1b[K\n'}
+[4.502667] (sonia_common_ros2) StdoutLine: {'line': b'[33/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/kill_status__type_support.c.o\x1b[K\n'}
+[4.510348] (sonia_common_ros2) StdoutLine: {'line': b'[33/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/kill_status__type_support_c.cpp.o\x1b[K\n'}
+[4.510810] (sonia_common_ros2) StdoutLine: {'line': b'[34/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/kill_status__type_support.cpp.o\x1b[K\n'}
+[4.536619] (-) TimerEvent: {}
+[4.542222] (sonia_common_ros2) StdoutLine: {'line': b'[34/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/pose__type_support_c.cpp.o\x1b[K\n'}
+[4.542635] (sonia_common_ros2) StdoutLine: {'line': b'[35/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[4.550397] (sonia_common_ros2) StdoutLine: {'line': b'[35/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/obstacle_array__type_support_c.cpp.o\x1b[K\n'}
+[4.550902] (sonia_common_ros2) StdoutLine: {'line': b'[36/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/obstacle_array__type_support.c.o\x1b[K\n'}
+[4.559797] (sonia_common_ros2) StdoutLine: {'line': b'[36/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/obstacle_info__type_support_c.cpp.o\x1b[K\n'}
+[4.560138] (sonia_common_ros2) StdoutLine: {'line': b'[37/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/mission_status__type_support.c.o\x1b[K\n'}
+[4.562253] (sonia_common_ros2) StdoutLine: {'line': b'[37/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/pose_array__type_support_c.cpp.o\x1b[K\n'}
+[4.562592] (sonia_common_ros2) StdoutLine: {'line': b'[38/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/obstacle_info__type_support.c.o\x1b[K\n'}
+[4.574615] (sonia_common_ros2) StdoutLine: {'line': b'[38/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/serial_message__type_support_c.cpp.o\x1b[K\n'}
+[4.574878] (sonia_common_ros2) StdoutLine: {'line': b'[39/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/pose__type_support.c.o\x1b[K\n'}
+[4.636720] (-) TimerEvent: {}
+[4.737290] (-) TimerEvent: {}
+[4.837879] (-) TimerEvent: {}
+[4.938471] (-) TimerEvent: {}
+[5.039099] (-) TimerEvent: {}
+[5.139706] (-) TimerEvent: {}
+[5.218125] (sonia_common_ros2) StdoutLine: {'line': b'[39/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/srv/detail/dropper_service__type_support_c.cpp.o\x1b[K\n'}
+[5.219798] (sonia_common_ros2) StdoutLine: {'line': b'[40/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/mission_status__type_support_c.cpp.o\x1b[K\n'}
+[5.233465] (sonia_common_ros2) StdoutLine: {'line': b'[40/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/srv/detail/serial_service__type_support_c.cpp.o\x1b[K\n'}
+[5.233890] (sonia_common_ros2) StdoutLine: {'line': b'[41/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/pose__type_support_c.cpp.o\x1b[K\n'}
+[5.239816] (-) TimerEvent: {}
+[5.246234] (sonia_common_ros2) StdoutLine: {'line': b'[41/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/pose_array__type_support.c.o\x1b[K\n'}
+[5.246769] (sonia_common_ros2) StdoutLine: {'line': b'[42/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/kill_status__type_support_c.cpp.o\x1b[K\n'}
+[5.273908] (sonia_common_ros2) StdoutLine: {'line': b'[42/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/serial_message__type_support.c.o\x1b[K\n'}
+[5.276560] (sonia_common_ros2) StdoutLine: {'line': b'[43/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/obstacle_info__type_support_c.cpp.o\x1b[K\n'}
+[5.285249] (sonia_common_ros2) StdoutLine: {'line': b'[43/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/srv/detail/dropper_service__type_support.c.o\x1b[K\n'}
+[5.285527] (sonia_common_ros2) StdoutLine: {'line': b'[44/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/pose_array__type_support_c.cpp.o\x1b[K\n'}
+[5.339929] (-) TimerEvent: {}
+[5.347010] (sonia_common_ros2) StdoutLine: {'line': b'[44/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/srv/detail/serial_service__type_support.c.o\x1b[K\n'}
+[5.347276] (sonia_common_ros2) StdoutLine: {'line': b'[45/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/pose_array__type_support.c.o\x1b[K\n'}
+[5.360497] (sonia_common_ros2) StdoutLine: {'line': b'[45/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/srv/serial_service__type_support.cpp.o\x1b[K\n'}
+[5.360741] (sonia_common_ros2) StdoutLine: {'line': b'[46/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/msg/detail/serial_message__type_support.c.o\x1b[K\n'}
+[5.361446] (sonia_common_ros2) StdoutLine: {'line': b'[46/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/mission_status__type_support.cpp.o\x1b[K\n'}
+[5.361669] (sonia_common_ros2) StdoutLine: {'line': b'[47/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/obstacle_array__type_support_c.cpp.o\x1b[K\n'}
+[5.363838] (sonia_common_ros2) StdoutLine: {'line': b'[47/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[5.364181] (sonia_common_ros2) StdoutLine: {'line': b'[48/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/srv/detail/dropper_service__type_support.c.o\x1b[K\n'}
+[5.378101] (sonia_common_ros2) StdoutLine: {'line': b'[48/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/pose__type_support.cpp.o\x1b[K\n'}
+[5.378473] (sonia_common_ros2) StdoutLine: {'line': b'[49/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/msg/detail/serial_message__type_support_c.cpp.o\x1b[K\n'}
+[5.409494] (sonia_common_ros2) StdoutLine: {'line': b'[49/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/pose_array__type_support.cpp.o\x1b[K\n'}
+[5.409945] (sonia_common_ros2) StdoutLine: {'line': b'[50/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/sonia_common_ros2/srv/serial_service__type_support.cpp.o\x1b[K\n'}
+[5.428745] (sonia_common_ros2) StdoutLine: {'line': b'[50/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_c.so\x1b[K\n'}
+[5.429004] (sonia_common_ros2) StdoutLine: {'line': b'[51/88] Building C object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sonia_common_ros2/srv/detail/serial_service__type_support.c.o\x1b[K\n'}
+[5.440030] (-) TimerEvent: {}
+[5.469954] (sonia_common_ros2) StdoutLine: {'line': b'[51/88] Linking C shared library libsonia_common_ros2__rosidl_typesupport_introspection_c.so\x1b[K\n'}
+[5.471663] (sonia_common_ros2) StdoutLine: {'line': b'[52/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/srv/detail/dropper_service__type_support_c.cpp.o\x1b[K\n'}
+[5.511999] (sonia_common_ros2) StdoutLine: {'line': b'[52/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/serial_message__type_support.cpp.o\x1b[K\n'}
+[5.512739] (sonia_common_ros2) StdoutLine: {'line': b'[53/88] Linking C shared library libsonia_common_ros2__rosidl_typesupport_introspection_c.so\x1b[K\n'}
+[5.540135] (-) TimerEvent: {}
+[5.542261] (sonia_common_ros2) StdoutLine: {'line': b'[53/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/srv/detail/dds_fastrtps/dropper_service__type_support.cpp.o\x1b[K\n'}
+[5.542526] (sonia_common_ros2) StdoutLine: {'line': b'[54/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_c.so\x1b[K\n'}
+[5.640244] (-) TimerEvent: {}
+[5.740607] (-) TimerEvent: {}
+[5.841208] (-) TimerEvent: {}
+[5.941793] (-) TimerEvent: {}
+[6.042408] (-) TimerEvent: {}
+[6.066693] (sonia_common_ros2) StdoutLine: {'line': b'[54/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/srv/detail/dds_fastrtps/serial_service__type_support.cpp.o\x1b[K\n'}
+[6.066987] (sonia_common_ros2) StdoutLine: {'line': b'[55/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sonia_common_ros2/srv/detail/serial_service__type_support_c.cpp.o\x1b[K\n'}
+[6.142512] (-) TimerEvent: {}
+[6.197974] (sonia_common_ros2) StdoutLine: {'line': b'[55/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_fastrtps_c.so\x1b[K\n'}
+[6.199427] (sonia_common_ros2) StdoutLine: {'line': b'[56/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/pose__type_support.cpp.o\x1b[K\n'}
+[6.242632] (-) TimerEvent: {}
+[6.244771] (sonia_common_ros2) StdoutLine: {'line': b'[56/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[6.245283] (sonia_common_ros2) StdoutLine: {'line': b'[57/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/mission_status__type_support.cpp.o\x1b[K\n'}
+[6.246123] (sonia_common_ros2) StdoutLine: {'line': b'[57/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/pose__type_support.cpp.o\x1b[K\n'}
+[6.246369] (sonia_common_ros2) StdoutLine: {'line': b'[58/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[6.261261] (sonia_common_ros2) StdoutLine: {'line': b'[58/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/pose_array__type_support.cpp.o\x1b[K\n'}
+[6.261566] (sonia_common_ros2) StdoutLine: {'line': b'[59/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/pose_array__type_support.cpp.o\x1b[K\n'}
+[6.277241] (sonia_common_ros2) StdoutLine: {'line': b'[59/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/serial_message__type_support.cpp.o\x1b[K\n'}
+[6.277506] (sonia_common_ros2) StdoutLine: {'line': b'[60/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_fastrtps_c.so\x1b[K\n'}
+[6.342735] (-) TimerEvent: {}
+[6.443067] (-) TimerEvent: {}
+[6.512830] (sonia_common_ros2) StdoutLine: {'line': b'[60/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/srv/detail/dropper_service__type_support.cpp.o\x1b[K\n'}
+[6.515680] (sonia_common_ros2) StdoutLine: {'line': b'[61/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/srv/detail/dds_fastrtps/serial_service__type_support.cpp.o\x1b[K\n'}
+[6.528783] (sonia_common_ros2) StdoutLine: {'line': b'[61/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/srv/detail/serial_service__type_support.cpp.o\x1b[K\n'}
+[6.529812] (sonia_common_ros2) StdoutLine: {'line': b'[62/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/srv/detail/dds_fastrtps/dropper_service__type_support.cpp.o\x1b[K\n'}
+[6.543177] (-) TimerEvent: {}
+[6.560645] (sonia_common_ros2) StdoutLine: {'line': b'[62/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[6.560898] (sonia_common_ros2) StdoutLine: {'line': b'[63/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sonia_common_ros2/msg/detail/dds_fastrtps/serial_message__type_support.cpp.o\x1b[K\n'}
+[6.643291] (-) TimerEvent: {}
+[6.743648] (-) TimerEvent: {}
+[6.838258] (sonia_common_ros2) StdoutLine: {'line': b'[63/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_fastrtps_cpp.so\x1b[K\n'}
+[6.841374] (sonia_common_ros2) StdoutLine: {'line': b'[64/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_fastrtps_cpp.so\x1b[K\n'}
+[6.843866] (-) TimerEvent: {}
+[6.944665] (-) TimerEvent: {}
+[7.045523] (-) TimerEvent: {}
+[7.074408] (sonia_common_ros2) StdoutLine: {'line': b'[64/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/pose_array__type_support.cpp.o\x1b[K\n'}
+[7.074837] (sonia_common_ros2) StdoutLine: {'line': b'[65/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/obstacle_info__type_support.cpp.o\x1b[K\n'}
+[7.118279] (sonia_common_ros2) StdoutLine: {'line': b'[65/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/pose__type_support.cpp.o\x1b[K\n'}
+[7.118784] (sonia_common_ros2) StdoutLine: {'line': b'[66/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/pose__type_support.cpp.o\x1b[K\n'}
+[7.145630] (-) TimerEvent: {}
+[7.149649] (sonia_common_ros2) StdoutLine: {'line': b'[66/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/serial_message__type_support.cpp.o\x1b[K\n'}
+[7.150181] (sonia_common_ros2) StdoutLine: {'line': b'[67/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/obstacle_array__type_support.cpp.o\x1b[K\n'}
+[7.158028] (sonia_common_ros2) StdoutLine: {'line': b'[67/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/srv/dropper_service__type_support.cpp.o\x1b[K\n'}
+[7.158465] (sonia_common_ros2) StdoutLine: {'line': b'[68/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/pose_array__type_support.cpp.o\x1b[K\n'}
+[7.172042] (sonia_common_ros2) StdoutLine: {'line': b'[68/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/srv/serial_service__type_support.cpp.o\x1b[K\n'}
+[7.173945] (sonia_common_ros2) StdoutLine: {'line': b'[69/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/srv/detail/dropper_service__type_support.cpp.o\x1b[K\n'}
+[7.246365] (-) TimerEvent: {}
+[7.288620] (sonia_common_ros2) StdoutLine: {'line': b'[69/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_KillStatus_message.cpp.o\x1b[K\n'}
+[7.290988] (sonia_common_ros2) StdoutLine: {'line': b'[70/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/msg/detail/serial_message__type_support.cpp.o\x1b[K\n'}
+[7.346475] (-) TimerEvent: {}
+[7.419243] (sonia_common_ros2) StdoutLine: {'line': b'[70/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_MissionStatus_message.cpp.o\x1b[K\n'}
+[7.419522] (sonia_common_ros2) StdoutLine: {'line': b'[71/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sonia_common_ros2/srv/detail/serial_service__type_support.cpp.o\x1b[K\n'}
+[7.447650] (-) TimerEvent: {}
+[7.449414] (sonia_common_ros2) StdoutLine: {'line': b'[71/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_introspection_cpp.so\x1b[K\n'}
+[7.449757] (sonia_common_ros2) StdoutLine: {'line': b'[72/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/pose_array__type_support.cpp.o\x1b[K\n'}
+[7.548146] (-) TimerEvent: {}
+[7.567250] (sonia_common_ros2) StdoutLine: {'line': b'[72/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_ObstacleArray_message.cpp.o\x1b[K\n'}
+[7.567698] (sonia_common_ros2) StdoutLine: {'line': b'[73/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_introspection_cpp.so\x1b[K\n'}
+[7.648243] (-) TimerEvent: {}
+[7.685178] (sonia_common_ros2) StdoutLine: {'line': b'[73/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_ObstacleInfo_message.cpp.o\x1b[K\n'}
+[7.685489] (sonia_common_ros2) StdoutLine: {'line': b'[74/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/pose__type_support.cpp.o\x1b[K\n'}
+[7.727549] (sonia_common_ros2) StdoutLine: {'line': b'[74/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_DropperService_service.cpp.o\x1b[K\n'}
+[7.730840] (sonia_common_ros2) StdoutLine: {'line': b'[75/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/msg/serial_message__type_support.cpp.o\x1b[K\n'}
+[7.748354] (-) TimerEvent: {}
+[7.757604] (sonia_common_ros2) StdoutLine: {'line': b'[75/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_PoseArray_message.cpp.o\x1b[K\n'}
+[7.757969] (sonia_common_ros2) StdoutLine: {'line': b'[76/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/srv/dropper_service__type_support.cpp.o\x1b[K\n'}
+[7.774537] (sonia_common_ros2) StdoutLine: {'line': b'[76/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_SerialMessage_message.cpp.o\x1b[K\n'}
+[7.774821] (sonia_common_ros2) StdoutLine: {'line': b'[77/88] Building CXX object CMakeFiles/sonia_common_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sonia_common_ros2/srv/serial_service__type_support.cpp.o\x1b[K\n'}
+[7.848451] (-) TimerEvent: {}
+[7.948804] (-) TimerEvent: {}
+[8.003837] (sonia_common_ros2) StdoutLine: {'line': b'[77/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_cpp.so\x1b[K\n'}
+[8.004092] (sonia_common_ros2) StdoutLine: {'line': b'[78/88] Linking CXX shared library libsonia_common_ros2__rosidl_typesupport_cpp.so\x1b[K\n'}
+[8.048907] (-) TimerEvent: {}
+[8.149510] (-) TimerEvent: {}
+[8.250151] (-) TimerEvent: {}
+[8.350762] (-) TimerEvent: {}
+[8.451352] (-) TimerEvent: {}
+[8.551967] (-) TimerEvent: {}
+[8.652821] (-) TimerEvent: {}
+[8.753910] (-) TimerEvent: {}
+[8.854813] (-) TimerEvent: {}
+[8.955746] (-) TimerEvent: {}
+[9.056638] (-) TimerEvent: {}
+[9.157488] (-) TimerEvent: {}
+[9.258415] (-) TimerEvent: {}
+[9.359318] (-) TimerEvent: {}
+[9.460232] (-) TimerEvent: {}
+[9.570153] (-) TimerEvent: {}
+[9.678071] (-) TimerEvent: {}
+[9.782071] (-) TimerEvent: {}
+[9.886090] (-) TimerEvent: {}
+[9.990067] (-) TimerEvent: {}
+[10.094068] (-) TimerEvent: {}
+[10.198073] (-) TimerEvent: {}
+[10.302081] (-) TimerEvent: {}
+[10.406075] (-) TimerEvent: {}
+[10.510072] (-) TimerEvent: {}
+[10.614075] (-) TimerEvent: {}
+[10.718073] (-) TimerEvent: {}
+[10.822084] (-) TimerEvent: {}
+[10.926085] (-) TimerEvent: {}
+[11.030081] (-) TimerEvent: {}
+[11.134085] (-) TimerEvent: {}
+[11.238091] (-) TimerEvent: {}
+[11.342103] (-) TimerEvent: {}
+[11.443190] (-) TimerEvent: {}
+[11.544288] (-) TimerEvent: {}
+[11.645374] (-) TimerEvent: {}
+[11.746505] (-) TimerEvent: {}
+[11.847577] (-) TimerEvent: {}
+[11.948665] (-) TimerEvent: {}
+[12.049737] (-) TimerEvent: {}
+[12.150830] (-) TimerEvent: {}
+[12.251980] (-) TimerEvent: {}
+[12.353092] (-) TimerEvent: {}
+[12.454259] (-) TimerEvent: {}
+[12.555412] (-) TimerEvent: {}
+[12.656559] (-) TimerEvent: {}
+[12.757678] (-) TimerEvent: {}
+[12.858811] (-) TimerEvent: {}
+[12.959966] (-) TimerEvent: {}
+[13.061159] (-) TimerEvent: {}
+[13.162265] (-) TimerEvent: {}
+[13.263419] (-) TimerEvent: {}
+[13.364528] (-) TimerEvent: {}
+[13.465725] (-) TimerEvent: {}
+[13.566937] (-) TimerEvent: {}
+[13.668015] (-) TimerEvent: {}
+[13.769101] (-) TimerEvent: {}
+[13.870201] (-) TimerEvent: {}
+[13.971306] (-) TimerEvent: {}
+[14.072474] (-) TimerEvent: {}
+[14.173628] (-) TimerEvent: {}
+[14.274821] (-) TimerEvent: {}
+[14.376017] (-) TimerEvent: {}
+[14.477093] (-) TimerEvent: {}
+[14.578214] (-) TimerEvent: {}
+[14.679303] (-) TimerEvent: {}
+[14.786084] (-) TimerEvent: {}
+[14.890087] (-) TimerEvent: {}
+[14.994061] (-) TimerEvent: {}
+[15.102085] (-) TimerEvent: {}
+[15.210092] (-) TimerEvent: {}
+[15.314088] (-) TimerEvent: {}
+[15.418084] (-) TimerEvent: {}
+[15.522087] (-) TimerEvent: {}
+[15.626156] (-) TimerEvent: {}
+[15.730080] (-) TimerEvent: {}
+[15.834086] (-) TimerEvent: {}
+[15.935756] (-) TimerEvent: {}
+[16.046095] (-) TimerEvent: {}
+[16.150100] (-) TimerEvent: {}
+[16.251184] (-) TimerEvent: {}
+[16.352269] (-) TimerEvent: {}
+[16.453369] (-) TimerEvent: {}
+[16.554469] (-) TimerEvent: {}
+[16.655606] (-) TimerEvent: {}
+[16.756707] (-) TimerEvent: {}
+[16.857855] (-) TimerEvent: {}
+[16.959020] (-) TimerEvent: {}
+[17.060084] (-) TimerEvent: {}
+[17.161169] (-) TimerEvent: {}
+[17.262241] (-) TimerEvent: {}
+[17.363339] (-) TimerEvent: {}
+[17.464507] (-) TimerEvent: {}
+[17.565636] (-) TimerEvent: {}
+[17.666868] (-) TimerEvent: {}
+[17.767942] (-) TimerEvent: {}
+[17.869008] (-) TimerEvent: {}
+[17.970077] (-) TimerEvent: {}
+[18.071267] (-) TimerEvent: {}
+[18.172520] (-) TimerEvent: {}
+[18.273639] (-) TimerEvent: {}
+[18.374774] (-) TimerEvent: {}
+[18.475863] (-) TimerEvent: {}
+[18.577073] (-) TimerEvent: {}
+[18.678153] (-) TimerEvent: {}
+[18.779234] (-) TimerEvent: {}
+[18.880344] (-) TimerEvent: {}
+[18.981435] (-) TimerEvent: {}
+[19.082653] (-) TimerEvent: {}
+[19.183802] (-) TimerEvent: {}
+[19.284951] (-) TimerEvent: {}
+[19.386085] (-) TimerEvent: {}
+[19.487205] (-) TimerEvent: {}
+[19.589508] (-) TimerEvent: {}
+[19.690698] (-) TimerEvent: {}
+[19.792559] (-) TimerEvent: {}
+[19.893623] (-) TimerEvent: {}
+[19.994618] (-) TimerEvent: {}
+[20.095698] (-) TimerEvent: {}
+[20.196140] (-) TimerEvent: {}
+[20.297304] (-) TimerEvent: {}
+[20.398644] (-) TimerEvent: {}
+[20.499813] (-) TimerEvent: {}
+[20.600988] (-) TimerEvent: {}
+[20.702152] (-) TimerEvent: {}
+[20.803248] (-) TimerEvent: {}
+[20.904289] (-) TimerEvent: {}
+[21.005460] (-) TimerEvent: {}
+[21.106625] (-) TimerEvent: {}
+[21.207728] (-) TimerEvent: {}
+[21.308855] (-) TimerEvent: {}
+[21.410040] (-) TimerEvent: {}
+[21.511188] (-) TimerEvent: {}
+[21.612354] (-) TimerEvent: {}
+[21.713434] (-) TimerEvent: {}
+[21.814428] (-) TimerEvent: {}
+[21.915527] (-) TimerEvent: {}
+[22.016631] (-) TimerEvent: {}
+[22.117697] (-) TimerEvent: {}
+[22.218817] (-) TimerEvent: {}
+[22.319965] (-) TimerEvent: {}
+[22.421033] (-) TimerEvent: {}
+[22.522091] (-) TimerEvent: {}
+[22.623084] (-) TimerEvent: {}
+[22.724172] (-) TimerEvent: {}
+[22.825269] (-) TimerEvent: {}
+[22.926362] (-) TimerEvent: {}
+[23.027535] (-) TimerEvent: {}
+[23.128711] (-) TimerEvent: {}
+[23.229775] (-) TimerEvent: {}
+[23.330964] (-) TimerEvent: {}
+[23.432091] (-) TimerEvent: {}
+[23.533197] (-) TimerEvent: {}
+[23.634332] (-) TimerEvent: {}
+[23.735485] (-) TimerEvent: {}
+[23.836620] (-) TimerEvent: {}
+[23.937733] (-) TimerEvent: {}
+[24.038972] (-) TimerEvent: {}
+[24.140097] (-) TimerEvent: {}
+[24.242043] (-) TimerEvent: {}
+[24.343192] (-) TimerEvent: {}
+[24.444250] (-) TimerEvent: {}
+[24.545497] (-) TimerEvent: {}
+[24.646690] (-) TimerEvent: {}
+[24.747830] (-) TimerEvent: {}
+[24.849175] (-) TimerEvent: {}
+[24.950343] (-) TimerEvent: {}
+[25.051542] (-) TimerEvent: {}
+[25.152639] (-) TimerEvent: {}
+[25.253745] (-) TimerEvent: {}
+[25.354841] (-) TimerEvent: {}
+[25.455957] (-) TimerEvent: {}
+[25.557036] (-) TimerEvent: {}
+[25.658085] (-) TimerEvent: {}
+[25.759152] (-) TimerEvent: {}
+[25.860211] (-) TimerEvent: {}
+[25.961259] (-) TimerEvent: {}
+[26.062412] (-) TimerEvent: {}
+[26.163443] (-) TimerEvent: {}
+[26.264492] (-) TimerEvent: {}
+[26.365555] (-) TimerEvent: {}
+[26.466622] (-) TimerEvent: {}
+[26.567677] (-) TimerEvent: {}
+[26.668719] (-) TimerEvent: {}
+[26.769777] (-) TimerEvent: {}
+[26.870846] (-) TimerEvent: {}
+[26.971915] (-) TimerEvent: {}
+[27.072964] (-) TimerEvent: {}
+[27.174040] (-) TimerEvent: {}
+[27.275093] (-) TimerEvent: {}
+[27.376145] (-) TimerEvent: {}
+[27.477184] (-) TimerEvent: {}
+[27.578342] (-) TimerEvent: {}
+[27.679376] (-) TimerEvent: {}
+[27.780451] (-) TimerEvent: {}
+[27.881492] (-) TimerEvent: {}
+[27.982857] (-) TimerEvent: {}
+[28.084036] (-) TimerEvent: {}
+[28.185250] (-) TimerEvent: {}
+[28.286392] (-) TimerEvent: {}
+[28.387453] (-) TimerEvent: {}
+[28.488521] (-) TimerEvent: {}
+[28.589570] (-) TimerEvent: {}
+[28.690625] (-) TimerEvent: {}
+[28.791686] (-) TimerEvent: {}
+[28.892719] (-) TimerEvent: {}
+[28.993894] (-) TimerEvent: {}
+[29.094386] (-) TimerEvent: {}
+[29.203371] (-) TimerEvent: {}
+[29.303781] (-) TimerEvent: {}
+[29.404196] (-) TimerEvent: {}
+[29.504607] (-) TimerEvent: {}
+[29.605037] (-) TimerEvent: {}
+[29.705467] (-) TimerEvent: {}
+[29.805871] (-) TimerEvent: {}
+[29.907159] (-) TimerEvent: {}
+[30.008231] (-) TimerEvent: {}
+[30.109288] (-) TimerEvent: {}
+[30.210318] (-) TimerEvent: {}
+[30.311407] (-) TimerEvent: {}
+[30.412477] (-) TimerEvent: {}
+[30.513535] (-) TimerEvent: {}
+[30.614648] (-) TimerEvent: {}
+[30.715717] (-) TimerEvent: {}
+[30.816132] (-) TimerEvent: {}
+[30.916549] (-) TimerEvent: {}
+[31.017584] (-) TimerEvent: {}
+[31.118651] (-) TimerEvent: {}
+[31.219405] (-) TimerEvent: {}
+[31.320490] (-) TimerEvent: {}
+[31.421568] (-) TimerEvent: {}
+[31.522666] (-) TimerEvent: {}
+[31.623739] (-) TimerEvent: {}
+[31.724828] (-) TimerEvent: {}
+[31.825974] (-) TimerEvent: {}
+[31.927128] (-) TimerEvent: {}
+[32.028253] (-) TimerEvent: {}
+[32.129418] (-) TimerEvent: {}
+[32.230555] (-) TimerEvent: {}
+[32.331681] (-) TimerEvent: {}
+[32.432810] (-) TimerEvent: {}
+[32.533947] (-) TimerEvent: {}
+[32.635029] (-) TimerEvent: {}
+[32.736098] (-) TimerEvent: {}
+[32.837175] (-) TimerEvent: {}
+[32.938270] (-) TimerEvent: {}
+[33.039329] (-) TimerEvent: {}
+[33.140476] (-) TimerEvent: {}
+[33.241618] (-) TimerEvent: {}
+[33.342774] (-) TimerEvent: {}
+[33.443891] (-) TimerEvent: {}
+[33.545146] (-) TimerEvent: {}
+[33.646177] (-) TimerEvent: {}
+[33.747232] (-) TimerEvent: {}
+[33.848295] (-) TimerEvent: {}
+[33.949476] (-) TimerEvent: {}
+[34.050641] (-) TimerEvent: {}
+[34.151857] (-) TimerEvent: {}
+[34.252393] (-) TimerEvent: {}
+[34.353640] (-) TimerEvent: {}
+[34.454178] (-) TimerEvent: {}
+[34.554717] (-) TimerEvent: {}
+[34.655225] (-) TimerEvent: {}
+[34.755751] (-) TimerEvent: {}
+[34.857063] (-) TimerEvent: {}
+[34.960167] (-) TimerEvent: {}
+[35.066462] (-) TimerEvent: {}
+[35.167567] (-) TimerEvent: {}
+[35.268727] (-) TimerEvent: {}
+[35.369183] (-) TimerEvent: {}
+[35.469620] (-) TimerEvent: {}
+[35.470715] (sonia_common_ros2) StdoutLine: {'line': b'[78/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_Pose_message.cpp.o\x1b[K\n'}
+[35.471550] (sonia_common_ros2) StdoutLine: {'line': b'[79/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_SerialMessage_message.cpp.o\x1b[K\n'}
+[35.569746] (-) TimerEvent: {}
+[35.692739] (-) TimerEvent: {}
+[35.793349] (-) TimerEvent: {}
+[35.871185] (sonia_common_ros2) StdoutLine: {'line': b'[79/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_SerialService_service.cpp.o\x1b[K\n'}
+[35.893469] (-) TimerEvent: {}
+[35.995639] (-) TimerEvent: {}
+[36.035766] (sonia_common_ros2) StdoutLine: {'line': b'[80/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_KillStatus_message.cpp.o\x1b[K\n'}
+[36.095769] (-) TimerEvent: {}
+[36.109900] (sonia_common_ros2) StdoutLine: {'line': b'[81/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_ObstacleInfo_message.cpp.o\x1b[K\n'}
+[36.202077] (-) TimerEvent: {}
+[36.234262] (sonia_common_ros2) StdoutLine: {'line': b'[82/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_Pose_message.cpp.o\x1b[K\n'}
+[36.302200] (-) TimerEvent: {}
+[36.402648] (-) TimerEvent: {}
+[36.503113] (-) TimerEvent: {}
+[36.558159] (sonia_common_ros2) StdoutLine: {'line': b'[83/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_ObstacleArray_message.cpp.o\x1b[K\n'}
+[36.603223] (-) TimerEvent: {}
+[36.639325] (sonia_common_ros2) StdoutLine: {'line': b'[84/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_PoseArray_message.cpp.o\x1b[K\n'}
+[36.703345] (-) TimerEvent: {}
+[36.803747] (-) TimerEvent: {}
+[36.904113] (-) TimerEvent: {}
+[37.004485] (-) TimerEvent: {}
+[37.104853] (-) TimerEvent: {}
+[37.205210] (-) TimerEvent: {}
+[37.305564] (-) TimerEvent: {}
+[37.405859] (-) TimerEvent: {}
+[37.506164] (-) TimerEvent: {}
+[37.606474] (-) TimerEvent: {}
+[37.706825] (-) TimerEvent: {}
+[37.807181] (-) TimerEvent: {}
+[37.907528] (-) TimerEvent: {}
+[38.007874] (-) TimerEvent: {}
+[38.108224] (-) TimerEvent: {}
+[38.208580] (-) TimerEvent: {}
+[38.308927] (-) TimerEvent: {}
+[38.409274] (-) TimerEvent: {}
+[38.509617] (-) TimerEvent: {}
+[38.609964] (-) TimerEvent: {}
+[38.710328] (-) TimerEvent: {}
+[38.810695] (-) TimerEvent: {}
+[38.911043] (-) TimerEvent: {}
+[39.011401] (-) TimerEvent: {}
+[39.111746] (-) TimerEvent: {}
+[39.212094] (-) TimerEvent: {}
+[39.312441] (-) TimerEvent: {}
+[39.412803] (-) TimerEvent: {}
+[39.513163] (-) TimerEvent: {}
+[39.613521] (-) TimerEvent: {}
+[39.713879] (-) TimerEvent: {}
+[39.814237] (-) TimerEvent: {}
+[39.914596] (-) TimerEvent: {}
+[40.014950] (-) TimerEvent: {}
+[40.115299] (-) TimerEvent: {}
+[40.215653] (-) TimerEvent: {}
+[40.316020] (-) TimerEvent: {}
+[40.416381] (-) TimerEvent: {}
+[40.516738] (-) TimerEvent: {}
+[40.617085] (-) TimerEvent: {}
+[40.717442] (-) TimerEvent: {}
+[40.817829] (-) TimerEvent: {}
+[40.918215] (-) TimerEvent: {}
+[41.018584] (-) TimerEvent: {}
+[41.118950] (-) TimerEvent: {}
+[41.219309] (-) TimerEvent: {}
+[41.319667] (-) TimerEvent: {}
+[41.420022] (-) TimerEvent: {}
+[41.520376] (-) TimerEvent: {}
+[41.620739] (-) TimerEvent: {}
+[41.721077] (-) TimerEvent: {}
+[41.821416] (-) TimerEvent: {}
+[41.921749] (-) TimerEvent: {}
+[42.022068] (-) TimerEvent: {}
+[42.086997] (sonia_common_ros2) StdoutLine: {'line': b'[85/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_MissionStatus_message.cpp.o\x1b[K\n'}
+[42.122170] (-) TimerEvent: {}
+[42.222491] (-) TimerEvent: {}
+[42.322805] (-) TimerEvent: {}
+[42.423107] (-) TimerEvent: {}
+[42.523404] (-) TimerEvent: {}
+[42.623715] (-) TimerEvent: {}
+[42.724011] (-) TimerEvent: {}
+[42.824322] (-) TimerEvent: {}
+[42.924576] (-) TimerEvent: {}
+[43.024854] (-) TimerEvent: {}
+[43.125146] (-) TimerEvent: {}
+[43.225432] (-) TimerEvent: {}
+[43.325694] (-) TimerEvent: {}
+[43.425954] (-) TimerEvent: {}
+[43.526224] (-) TimerEvent: {}
+[43.626487] (-) TimerEvent: {}
+[43.726745] (-) TimerEvent: {}
+[43.827039] (-) TimerEvent: {}
+[43.927306] (-) TimerEvent: {}
+[44.027577] (-) TimerEvent: {}
+[44.127843] (-) TimerEvent: {}
+[44.228103] (-) TimerEvent: {}
+[44.328393] (-) TimerEvent: {}
+[44.428658] (-) TimerEvent: {}
+[44.528970] (-) TimerEvent: {}
+[44.629234] (-) TimerEvent: {}
+[44.729513] (-) TimerEvent: {}
+[44.829774] (-) TimerEvent: {}
+[44.930048] (-) TimerEvent: {}
+[45.030340] (-) TimerEvent: {}
+[45.130631] (-) TimerEvent: {}
+[45.230924] (-) TimerEvent: {}
+[45.331220] (-) TimerEvent: {}
+[45.431513] (-) TimerEvent: {}
+[45.531804] (-) TimerEvent: {}
+[45.632130] (-) TimerEvent: {}
+[45.732430] (-) TimerEvent: {}
+[45.832726] (-) TimerEvent: {}
+[45.933029] (-) TimerEvent: {}
+[46.033353] (-) TimerEvent: {}
+[46.133660] (-) TimerEvent: {}
+[46.233968] (-) TimerEvent: {}
+[46.334266] (-) TimerEvent: {}
+[46.434565] (-) TimerEvent: {}
+[46.534860] (-) TimerEvent: {}
+[46.635150] (-) TimerEvent: {}
+[46.735439] (-) TimerEvent: {}
+[46.835747] (-) TimerEvent: {}
+[46.936041] (-) TimerEvent: {}
+[47.036349] (-) TimerEvent: {}
+[47.136637] (-) TimerEvent: {}
+[47.236928] (-) TimerEvent: {}
+[47.337235] (-) TimerEvent: {}
+[47.437556] (-) TimerEvent: {}
+[47.537848] (-) TimerEvent: {}
+[47.638146] (-) TimerEvent: {}
+[47.738432] (-) TimerEvent: {}
+[47.838721] (-) TimerEvent: {}
+[47.939009] (-) TimerEvent: {}
+[48.039302] (-) TimerEvent: {}
+[48.139615] (-) TimerEvent: {}
+[48.239907] (-) TimerEvent: {}
+[48.340197] (-) TimerEvent: {}
+[48.440480] (-) TimerEvent: {}
+[48.540795] (-) TimerEvent: {}
+[48.641097] (-) TimerEvent: {}
+[48.741407] (-) TimerEvent: {}
+[48.841697] (-) TimerEvent: {}
+[48.942012] (-) TimerEvent: {}
+[49.042330] (-) TimerEvent: {}
+[49.142643] (-) TimerEvent: {}
+[49.242946] (-) TimerEvent: {}
+[49.343226] (-) TimerEvent: {}
+[49.443490] (-) TimerEvent: {}
+[49.543813] (-) TimerEvent: {}
+[49.644121] (-) TimerEvent: {}
+[49.744431] (-) TimerEvent: {}
+[49.844779] (-) TimerEvent: {}
+[49.945060] (-) TimerEvent: {}
+[50.045345] (-) TimerEvent: {}
+[50.145637] (-) TimerEvent: {}
+[50.245925] (-) TimerEvent: {}
+[50.346228] (-) TimerEvent: {}
+[50.446506] (-) TimerEvent: {}
+[50.546794] (-) TimerEvent: {}
+[50.647077] (-) TimerEvent: {}
+[50.747362] (-) TimerEvent: {}
+[50.847647] (-) TimerEvent: {}
+[50.947927] (-) TimerEvent: {}
+[51.048206] (-) TimerEvent: {}
+[51.148505] (-) TimerEvent: {}
+[51.248794] (-) TimerEvent: {}
+[51.349078] (-) TimerEvent: {}
+[51.449359] (-) TimerEvent: {}
+[51.549642] (-) TimerEvent: {}
+[51.649928] (-) TimerEvent: {}
+[51.750223] (-) TimerEvent: {}
+[51.850539] (-) TimerEvent: {}
+[51.950830] (-) TimerEvent: {}
+[52.051132] (-) TimerEvent: {}
+[52.151435] (-) TimerEvent: {}
+[52.251744] (-) TimerEvent: {}
+[52.352052] (-) TimerEvent: {}
+[52.452364] (-) TimerEvent: {}
+[52.552674] (-) TimerEvent: {}
+[52.652976] (-) TimerEvent: {}
+[52.753284] (-) TimerEvent: {}
+[52.853600] (-) TimerEvent: {}
+[52.953918] (-) TimerEvent: {}
+[53.054234] (-) TimerEvent: {}
+[53.154542] (-) TimerEvent: {}
+[53.243591] (sonia_common_ros2) StdoutLine: {'line': b'[86/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_DropperService_service.cpp.o\x1b[K\n'}
+[53.243854] (sonia_common_ros2) StdoutLine: {'line': b'[87/88] Building CXX object CMakeFiles/sonia_common_ros2_matlab.dir/src/sonia_common_ros2_SerialService_service.cpp.o\x1b[K\n'}
+[53.254651] (-) TimerEvent: {}
+[53.354936] (-) TimerEvent: {}
+[53.455245] (-) TimerEvent: {}
+[53.555555] (-) TimerEvent: {}
+[53.655877] (-) TimerEvent: {}
+[53.756198] (-) TimerEvent: {}
+[53.856498] (-) TimerEvent: {}
+[53.956884] (-) TimerEvent: {}
+[54.057152] (-) TimerEvent: {}
+[54.157426] (-) TimerEvent: {}
+[54.257708] (-) TimerEvent: {}
+[54.358056] (-) TimerEvent: {}
+[54.458374] (-) TimerEvent: {}
+[54.558701] (-) TimerEvent: {}
+[54.659040] (-) TimerEvent: {}
+[54.759365] (-) TimerEvent: {}
+[54.859684] (-) TimerEvent: {}
+[54.960011] (-) TimerEvent: {}
+[55.060328] (-) TimerEvent: {}
+[55.160638] (-) TimerEvent: {}
+[55.260952] (-) TimerEvent: {}
+[55.361299] (-) TimerEvent: {}
+[55.461635] (-) TimerEvent: {}
+[55.561974] (-) TimerEvent: {}
+[55.662300] (-) TimerEvent: {}
+[55.762601] (-) TimerEvent: {}
+[55.862933] (-) TimerEvent: {}
+[55.963269] (-) TimerEvent: {}
+[56.063592] (-) TimerEvent: {}
+[56.163912] (-) TimerEvent: {}
+[56.264238] (-) TimerEvent: {}
+[56.364573] (-) TimerEvent: {}
+[56.464910] (-) TimerEvent: {}
+[56.565233] (-) TimerEvent: {}
+[56.665542] (-) TimerEvent: {}
+[56.765875] (-) TimerEvent: {}
+[56.866250] (-) TimerEvent: {}
+[56.966598] (-) TimerEvent: {}
+[57.066964] (-) TimerEvent: {}
+[57.078803] (sonia_common_ros2) StdoutLine: {'line': b'[87/88] Linking CXX shared library libsonia_common_ros2_matlab.so\x1b[K\n'}
+[57.078992] (sonia_common_ros2) StdoutLine: {'line': b'[88/88] Linking CXX shared library libsonia_common_ros2_matlab.so\x1b[K\n'}
+[57.095665] (sonia_common_ros2) CommandEnded: {'returncode': 0}
+[57.131416] (sonia_common_ros2) JobProgress: {'identifier': 'sonia_common_ros2', 'progress': 'install'}
+[57.135988] (sonia_common_ros2) Command: {'cmd': ['/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake', '--install', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2'], 'cwd': '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('VSCODE_CWD', '/home/nimai/ros2_sonia_ws/src/control_library'), ('LANGUAGE', 'en_CA:en'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'nimai'), ('SNAP_COMMON', '/var/snap/code/common'), ('ROS_MAVEN_DEPLOYMENT_REPOSITORY', '/home/nimai/.m2/repository/'), ('LOCAL_PYTHON_VENV_PATH', '/home/nimai/.matlab/R2024a/ros2/glnxa64/venv'), ('VSCODE_NLS_CONFIG', '{"locale":"en-gb","osLocale":"en-ca","availableLanguages":{},"_languagePackSupport":true}'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('MATLAB_LOG_DIR', '/tmp/matlabls_36804'), ('GIO_MODULE_DIR', '/home/nimai/snap/code/common/.cache/gio-modules'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('CUSTOM_AMENT_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('XDG_SESSION_TYPE', 'wayland'), ('SNAP_UID', '1000'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2024a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2024a/sys/opengl/lib/glnxa64:/usr/local/MATLAB/R2024a/sys/os/glnxa64:/usr/local/MATLAB/R2024a/bin/glnxa64:/home/nimai/.MathWorks/sjIU_JBHMpDfD2I6PVGUzD1UvwcpVSfTWaVgy57sVOE/bin/glnxa64:/usr/local/MATLAB/R2024a/extern/lib/glnxa64:/usr/local/MATLAB/R2024a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2024a/runtime/glnxa64:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/server:/home/nimai/ros2_sonia_ws/install/sonia_common_ros2/lib:/home/nimai/ros2_sonia_ws/install/sonia_common_cpp/lib:/home/nimai/ros2_sonia_ws/install/btcpp_ros2_interfaces/lib:/home/nimai/ros2_sonia_ws/install/behaviortree_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BASEMATLABPATH', ''), ('HOME', '/home/nimai'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2024a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2024a/bin/glnxa64/ld_shim.so.2.35.ubuntu_22_04'), ('SNAP_USER_DATA', '/home/nimai/snap/code/157'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-4851b5d9-1.88-main.sock'), ('GTK_IM_MODULE_FILE', '/home/nimai/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('ELECTRON_NO_ASAR', '1'), ('ROS_IP', '10.192.164.236'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '933'), ('SYSTEMD_EXEC_PID', '1320'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '157'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '35465'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('MWAPIKEY', 'bVU8GKr.qEE~~mIVkDIqqQKPe9LNm1cuvxE8eduffQ_HOLqo-1PMCJB8IVGGSBFWPXSzdjqj5Zck~rif.oHtpUMPBWMirqE~oaoteiDy03mtcrjyEIBRa86iL5Zs0AyusN27fHmxB-BU7hkPV05J6cdbNa9X1L2GKORWxtlmC6TRLc3Ea2o~NHbvfrlmA02DfHh0fRshhy4YCeL2dE8aV9bpS3Ed1r0P3Ta9F5TkB9boUMaahuK0T1K7sldnP_myP9Zsmj~F0JiQzlobYUs7oG2d48mFniCFVwBWXQqwfqE2DkgtJ5GlqJrDXzmdQg4WNj.BEO4VzY4aD7Zgd__vuOpyYRw6iPiaBWxa4qkoTftee60Bi0lf2~2TGOJMsizE63U3m.mNAkViDK5-AumurnhU.iqcN3CJ6d3Rxt1CfYGy9eQ7PzBx-CCOsukceuFvQ5ot5GHmneRfKg0BnyPyg~FHtss92Fk.eE_igAQ-CrvVjxQhNZSFgamYUsajdyDPcLSmFD.wIMONJ5JZ7MK7a3hmQkudu9soighEJQiWOf15Lc~pd9dpOqF~5bBekXWWbkMvaaM2A08DIlFTKwmq3hwdDurcNonfT114qRy-_B8qrEkXi_7BiIwxUP1u.6-K6enOBmpt4g9Dg21TmJnxEXW.F-uRjZCDYZqfDJTyfXi6HctorsO9qSPFJVQm32LdWRqM4Mrc2I8Om20LFwIg2PrycW0Z0B5kNySF5ZaokHFGTEY4_Ea0tcYUQOhDh137on5~21mdx45sRjU-GBGmaWfrnZAPlHJY6EIjyBcD9~ZswjW8TBp_qMW~_JPMGVOvrT8xYW.7lkutO9J8ryLWR3f5osq6c4KM24mg2t3MbO8OkB5Nzy.N1_W7Dd_1l93PwiBb6FUwAs~EqyjoUTMod3eIj2wrXJwkhk8YzTaPIar4wMS7dZgdfR.PI24QlhyFPKmcJtAzHuZKfVVq2Rot9oeUiVM.JWrOAiuDhDdcraNbNAT40ClY~3Cwcw8ooPiJ'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nimai'), ('MATLAB_MEM_MGR_VALUE', ''), ('ROS_WS_SETUP', '/opt/ros/humble/setup.bash'), ('SNAP_CONTEXT', 'dweeeN9gGlfCbhmsGyC6Kvhu3YkLnoaHvJ1HEDWbVqxLLZU8TS8U'), ('JOURNAL_STREAM', '8:31781'), ('_', '/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', 'e170252f'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'nimai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'code'), ('ROS_LOCALHOST_ONLY', '0'), ('AUV7_IP', '192.168.0.11'), ('AUV8_IP', '192.168.0.31'), ('PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/bin:/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin:/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64:/home/nimai/ros2_sonia_ws/install/behaviortree_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nimai-specter:@/tmp/.ICE-unix/1080,unix/nimai-specter:/tmp/.ICE-unix/1080'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('INVOCATION_ID', '787a178defe64be4829b4ac2d045d1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('SNAP_DATA', '/var/snap/code/157'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('TOOLBOX', '/usr/local/MATLAB/R2024a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PRE_LD_PRELOAD', ''), ('IBUS_DISABLE_SNOOPER', '1'), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GC2JM2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/nimai/snap/code/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/nimai/snap/code/157/.local/share/glib-2.0/schemas'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SNAP_COOKIE', 'dweeeN9gGlfCbhmsGyC6Kvhu3YkLnoaHvJ1HEDWbVqxLLZU8TS8U'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:243c8e21-9628-4c21-b20d-d0ef680b4e92'), ('CMAKE_PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin'), ('GDK_PIXBUF_MODULEDIR', '/snap/code/157/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('NO_AT_BRIDGE', '1'), ('ROS_MASTER_URI', 'http://localhost:11311/'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SNAP_NAME', 'code'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2024a/sys/openscenegraph/lib/glnxa64'), ('GDK_PIXBUF_MODULE_FILE', '/home/nimai/snap/code/common/.cache/gdk-pixbuf-loaders.cache'), ('VIRTUAL_ENV', '/home/nimai/.matlab/R2024a/ros2/glnxa64/venv'), ('SNAP_LAUNCHER_ARCH_TRIPLET', 'x86_64-linux-gnu'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('ROS_SONIA_WS', '/home/nimai/ros2_sonia_ws'), ('PWD', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SNAP_REAL_HOME', '/home/nimai'), ('VSCODE_CODE_CACHE_PATH', '/home/nimai/.config/Code/CachedData/e170252f762678dec6ca2cc69aba1570769a5d39'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/home/nimai/snap/code/157/.local/share:/home/nimai/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000117000002EA0'), ('SNAP_EUID', '1000'), ('PYTHONPATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/sonia_common_ros2/local/lib/python3.10/dist-packages:/home/nimai/ros2_sonia_ws/install/sonia_common_py/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/rqt_toolbar/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/rqt_actuator/lib/python3.10/site-packages:/home/nimai/ros2_sonia_ws/install/btcpp_ros2_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/code/157'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ROS_HOME', '/home/nimai/ros2_sonia_ws'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('VSCODE_PID', '35874')]), 'shell': False}
+[57.141196] (sonia_common_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[57.141541] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/rosidl_interfaces/sonia_common_ros2\n'}
+[57.141776] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2\n'}
+[57.142024] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg\n'}
+[57.142245] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/serial_message.h\n'}
+[57.142654] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/rosidl_generator_c__visibility_control.h\n'}
+[57.142925] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail\n'}
+[57.143088] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__functions.h\n'}
+[57.143350] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__struct.h\n'}
+[57.143735] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__type_support.h\n'}
+[57.144116] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__type_support.h\n'}
+[57.144480] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__functions.h\n'}
+[57.144865] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__struct.h\n'}
+[57.145210] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__struct.h\n'}
+[57.145583] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__type_support.h\n'}
+[57.145837] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__type_support.h\n'}
+[57.146270] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__functions.c\n'}
+[57.146600] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__functions.h\n'}
+[57.146973] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__type_support.h\n'}
+[57.147325] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__functions.h\n'}
+[57.147698] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__functions.c\n'}
+[57.148094] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__functions.h\n'}
+[57.148468] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__struct.h\n'}
+[57.148823] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__functions.c\n'}
+[57.149200] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__struct.h\n'}
+[57.149564] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__functions.c\n'}
+[57.149929] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__struct.h\n'}
+[57.150300] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__functions.c\n'}
+[57.150717] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__type_support.h\n'}
+[57.151032] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__functions.h\n'}
+[57.151410] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__type_support.h\n'}
+[57.151768] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__functions.c\n'}
+[57.152137] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__functions.c\n'}
+[57.152528] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__functions.h\n'}
+[57.152895] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__struct.h\n'}
+[57.153219] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/obstacle_array.h\n'}
+[57.153473] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/pose_array.h\n'}
+[57.153730] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/obstacle_info.h\n'}
+[57.153971] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/kill_status.h\n'}
+[57.154274] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/mission_status.h\n'}
+[57.154528] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/pose.h\n'}
+[57.154778] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv\n'}
+[57.155012] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail\n'}
+[57.155197] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__type_support.h\n'}
+[57.155684] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__functions.c\n'}
+[57.156083] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__struct.h\n'}
+[57.156340] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__struct.h\n'}
+[57.156682] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__type_support.h\n'}
+[57.156939] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__functions.c\n'}
+[57.157384] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__functions.h\n'}
+[57.157812] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__functions.h\n'}
+[57.158125] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/dropper_service.h\n'}
+[57.158512] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/serial_service.h\n'}
+[57.158935] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/environment/library_path.sh\n'}
+[57.159164] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/environment/library_path.dsv\n'}
+[57.159644] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_generator_c.so\n'}
+[57.160209] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2\n'}
+[57.160434] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg\n'}
+[57.160684] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail\n'}
+[57.160939] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__rosidl_typesupport_fastrtps_c.h\n'}
+[57.161323] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__rosidl_typesupport_fastrtps_c.h\n'}
+[57.161690] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[57.162053] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__rosidl_typesupport_fastrtps_c.h\n'}
+[57.162432] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__rosidl_typesupport_fastrtps_c.h\n'}
+[57.162805] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__rosidl_typesupport_fastrtps_c.h\n'}
+[57.163179] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__rosidl_typesupport_fastrtps_c.h\n'}
+[57.163547] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[57.163736] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv\n'}
+[57.163944] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail\n'}
+[57.164165] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__rosidl_typesupport_fastrtps_c.h\n'}
+[57.164458] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__rosidl_typesupport_fastrtps_c.h\n'}
+[57.164891] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_typesupport_fastrtps_c.so\n'}
+[57.165354] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2\n'}
+[57.165627] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg\n'}
+[57.165842] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail\n'}
+[57.166053] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[57.166450] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__rosidl_typesupport_introspection_c.h\n'}
+[57.166818] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__type_support.c\n'}
+[57.166987] (-) TimerEvent: {}
+[57.167220] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__type_support.c\n'}
+[57.167655] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__type_support.c\n'}
+[57.168062] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__rosidl_typesupport_introspection_c.h\n'}
+[57.168443] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__rosidl_typesupport_introspection_c.h\n'}
+[57.168822] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__type_support.c\n'}
+[57.169218] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__type_support.c\n'}
+[57.169576] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__rosidl_typesupport_introspection_c.h\n'}
+[57.169936] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__rosidl_typesupport_introspection_c.h\n'}
+[57.170384] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__type_support.c\n'}
+[57.170737] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__rosidl_typesupport_introspection_c.h\n'}
+[57.171053] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__type_support.c\n'}
+[57.171412] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[57.171640] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv\n'}
+[57.171851] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail\n'}
+[57.172070] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__type_support.c\n'}
+[57.172396] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__rosidl_typesupport_introspection_c.h\n'}
+[57.172756] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__type_support.c\n'}
+[57.173157] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__rosidl_typesupport_introspection_c.h\n'}
+[57.173559] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_typesupport_introspection_c.so\n'}
+[57.174035] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_typesupport_c.so\n'}
+[57.174441] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2\n'}
+[57.174717] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg\n'}
+[57.174886] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/obstacle_info.hpp\n'}
+[57.175111] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail\n'}
+[57.175364] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__traits.hpp\n'}
+[57.175599] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__traits.hpp\n'}
+[57.175829] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__builder.hpp\n'}
+[57.176082] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__traits.hpp\n'}
+[57.176363] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__builder.hpp\n'}
+[57.176631] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__traits.hpp\n'}
+[57.176914] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__builder.hpp\n'}
+[57.177176] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__builder.hpp\n'}
+[57.177454] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__traits.hpp\n'}
+[57.177718] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__struct.hpp\n'}
+[57.177981] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__struct.hpp\n'}
+[57.178291] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__struct.hpp\n'}
+[57.178541] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__struct.hpp\n'}
+[57.178834] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__traits.hpp\n'}
+[57.179096] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__struct.hpp\n'}
+[57.179392] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__builder.hpp\n'}
+[57.179663] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__builder.hpp\n'}
+[57.179944] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__struct.hpp\n'}
+[57.180245] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__traits.hpp\n'}
+[57.180515] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__builder.hpp\n'}
+[57.180758] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__struct.hpp\n'}
+[57.181072] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/mission_status.hpp\n'}
+[57.181444] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/pose_array.hpp\n'}
+[57.181809] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/obstacle_array.hpp\n'}
+[57.182183] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/kill_status.hpp\n'}
+[57.182532] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/pose.hpp\n'}
+[57.182870] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/serial_message.hpp\n'}
+[57.183214] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv\n'}
+[57.183451] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/serial_service.hpp\n'}
+[57.183678] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail\n'}
+[57.183907] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__traits.hpp\n'}
+[57.184128] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__struct.hpp\n'}
+[57.184451] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__builder.hpp\n'}
+[57.184720] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__traits.hpp\n'}
+[57.185084] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__builder.hpp\n'}
+[57.185437] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__struct.hpp\n'}
+[57.185726] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/dropper_service.hpp\n'}
+[57.186145] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2\n'}
+[57.186392] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg\n'}
+[57.186636] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[57.186851] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail\n'}
+[57.187074] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.187394] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.187765] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.188150] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.188553] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/dds_fastrtps\n'}
+[57.188808] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.189132] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.189496] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.189865] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv\n'}
+[57.190116] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail\n'}
+[57.190357] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.190673] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dds_fastrtps\n'}
+[57.190908] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.191412] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[57.192112] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2\n'}
+[57.192368] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg\n'}
+[57.192589] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail\n'}
+[57.192811] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__type_support.cpp\n'}
+[57.193229] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.193610] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.193962] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.194374] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__type_support.cpp\n'}
+[57.194765] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_info__type_support.cpp\n'}
+[57.195164] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.195546] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.195939] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.196271] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/mission_status__type_support.cpp\n'}
+[57.196645] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/kill_status__type_support.cpp\n'}
+[57.197017] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/pose_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.197349] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/serial_message__type_support.cpp\n'}
+[57.197753] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/msg/detail/obstacle_array__type_support.cpp\n'}
+[57.198178] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv\n'}
+[57.198412] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail\n'}
+[57.198663] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.199030] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.199412] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/serial_service__type_support.cpp\n'}
+[57.199857] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/sonia_common_ros2/srv/detail/dropper_service__type_support.cpp\n'}
+[57.200332] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_typesupport_introspection_cpp.so\n'}
+[57.200962] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2__rosidl_typesupport_cpp.so\n'}
+[57.201396] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/KillStatus.idl\n'}
+[57.201638] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/MissionStatus.idl\n'}
+[57.201948] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/ObstacleArray.idl\n'}
+[57.202425] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/ObstacleInfo.idl\n'}
+[57.202687] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/Pose.idl\n'}
+[57.202958] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/PoseArray.idl\n'}
+[57.203213] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/SerialMessage.idl\n'}
+[57.203466] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/DropperService.idl\n'}
+[57.203709] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/SerialService.idl\n'}
+[57.203894] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/KillStatus.msg\n'}
+[57.204082] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/MissionStatus.msg\n'}
+[57.204334] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/ObstacleArray.msg\n'}
+[57.204578] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/ObstacleInfo.msg\n'}
+[57.204807] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/Pose.msg\n'}
+[57.205051] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/PoseArray.msg\n'}
+[57.205292] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/msg/SerialMessage.msg\n'}
+[57.205542] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/DropperService.srv\n'}
+[57.205795] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/DropperService_Request.msg\n'}
+[57.206033] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/DropperService_Response.msg\n'}
+[57.206227] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/SerialService.srv\n'}
+[57.206410] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/SerialService_Request.msg\n'}
+[57.206596] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/srv/SerialService_Response.msg\n'}
+[57.206777] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include\n'}
+[57.206958] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2\n'}
+[57.207139] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/include/sonia_common_ros2/visibility_control.h\n'}
+[57.207320] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/libsonia_common_ros2_matlab.so\n'}
+[57.267114] (-) TimerEvent: {}
+[57.288378] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m/\n'}
+[57.288692] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros\n'}
+[57.288934] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal\n'}
+[57.289190] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2\n'}
+[57.289460] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages\n'}
+[57.289710] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2\n'}
+[57.290014] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/obstacleArray.m\n'}
+[57.290499] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/missionStatus.m\n'}
+[57.290805] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/dropperServiceResponse.m\n'}
+[57.291124] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/killStatus.m\n'}
+[57.291380] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/serialServiceResponse.m\n'}
+[57.291560] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/serialMessage.m\n'}
+[57.291788] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/dropperServiceRequest.m\n'}
+[57.291981] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/poseArray.m\n'}
+[57.292191] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/pose.m\n'}
+[57.292434] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/serialServiceRequest.m\n'}
+[57.292688] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+sonia_common_ros2/obstacleInfo.m\n'}
+[57.292924] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/package_run_dependencies/sonia_common_ros2\n'}
+[57.293131] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/parent_prefix_path/sonia_common_ros2\n'}
+[57.293371] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/environment/ament_prefix_path.sh\n'}
+[57.293625] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/environment/ament_prefix_path.dsv\n'}
+[57.293835] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/environment/path.sh\n'}
+[57.294100] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/environment/path.dsv\n'}
+[57.294354] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/local_setup.bash\n'}
+[57.294587] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/local_setup.sh\n'}
+[57.294789] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/local_setup.zsh\n'}
+[57.294996] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/local_setup.dsv\n'}
+[57.295237] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.dsv\n'}
+[57.295647] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/packages/sonia_common_ros2\n'}
+[57.296243] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_generator_cExport-release.cmake].\n'}
+[57.296525] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_generator_cExport.cmake\n'}
+[57.296934] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_generator_cExport-release.cmake\n'}
+[57.297455] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cExport-release.cmake].\n'}
+[57.297735] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[57.298159] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[57.298694] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cExport-release.cmake].\n'}
+[57.298984] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[57.299352] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[57.299874] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cExport-release.cmake].\n'}
+[57.300158] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cExport.cmake\n'}
+[57.300551] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cExport-release.cmake\n'}
+[57.301180] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_generator_cppExport.cmake\n'}
+[57.301794] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cppExport-release.cmake].\n'}
+[57.302087] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[57.302531] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/export_sonia_common_ros2__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[57.303035] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cppExport-release.cmake].\n'}
+[57.303313] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[57.303701] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[57.304214] (sonia_common_ros2) StdoutLine: {'line': b'-- Old export file "/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cppExport-release.cmake].\n'}
+[57.304500] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cppExport.cmake\n'}
+[57.304920] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2__rosidl_typesupport_cppExport-release.cmake\n'}
+[57.305344] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/rosidl_cmake-extras.cmake\n'}
+[57.305613] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[57.305918] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[57.306203] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[57.306475] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[57.306733] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[57.307004] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[57.307215] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2Config.cmake\n'}
+[57.307416] (sonia_common_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/cmake/sonia_common_ros2Config-version.cmake\n'}
+[57.307607] (sonia_common_ros2) StdoutLine: {'line': b'-- Installing: /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.xml\n'}
+[57.309556] (sonia_common_ros2) CommandEnded: {'returncode': 0}
+[57.372273] (-) TimerEvent: {}
+[57.475459] (-) TimerEvent: {}
+[57.505869] (sonia_common_ros2) JobEnded: {'identifier': 'sonia_common_ros2', 'rc': 0}
+[57.508910] (-) EventReactorShutdown: {}

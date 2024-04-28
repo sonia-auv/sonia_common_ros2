@@ -1,0 +1,37 @@
+function [data, info] = obstacleArray
+%ObstacleArray gives an empty data for sonia_common_ros2/ObstacleArray
+% Copyright 2019-2021 The MathWorks, Inc.
+data = struct();
+data.MessageType = 'sonia_common_ros2/ObstacleArray';
+[data.header, info.header] = ros.internal.ros2.messages.std_msgs.header;
+info.header.MLdataType = 'struct';
+[data.obstacles, info.obstacles] = ros.internal.ros2.custommessages.sonia_common_ros2.obstacleInfo;
+info.obstacles.MLdataType = 'struct';
+info.obstacles.MaxLen = NaN;
+info.obstacles.MinLen = 0;
+info.MessageType = 'sonia_common_ros2/ObstacleArray';
+info.constant = 0;
+info.default = 0;
+info.maxstrlen = NaN;
+info.MaxLen = 1;
+info.MinLen = 1;
+info.MatPath = cell(1,19);
+info.MatPath{1} = 'header';
+info.MatPath{2} = 'header.stamp';
+info.MatPath{3} = 'header.stamp.sec';
+info.MatPath{4} = 'header.stamp.nanosec';
+info.MatPath{5} = 'header.frame_id';
+info.MatPath{6} = 'obstacles';
+info.MatPath{7} = 'obstacles.name';
+info.MatPath{8} = 'obstacles.is_valid';
+info.MatPath{9} = 'obstacles.confidence';
+info.MatPath{10} = 'obstacles.pose';
+info.MatPath{11} = 'obstacles.pose.position';
+info.MatPath{12} = 'obstacles.pose.position.x';
+info.MatPath{13} = 'obstacles.pose.position.y';
+info.MatPath{14} = 'obstacles.pose.position.z';
+info.MatPath{15} = 'obstacles.pose.orientation';
+info.MatPath{16} = 'obstacles.pose.orientation.x';
+info.MatPath{17} = 'obstacles.pose.orientation.y';
+info.MatPath{18} = 'obstacles.pose.orientation.z';
+info.MatPath{19} = 'obstacles.pose.orientation.w';
