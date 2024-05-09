@@ -3,7 +3,6 @@
 #include <string>
 #include <cstring>
 #include <vector>
-#include <sys/socket.h>
 #include <arpa/inet.h>
 
 namespace sonia_common_cpp
