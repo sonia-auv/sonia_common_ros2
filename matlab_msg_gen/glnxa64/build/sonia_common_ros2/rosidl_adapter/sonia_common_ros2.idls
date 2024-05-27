@@ -1,9 +1,0 @@
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/KillStatus.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/MissionStatus.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/ObstacleArray.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/ObstacleInfo.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/Pose.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/PoseArray.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:msg/SerialMessage.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:srv/DropperService.idl
-/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2/rosidl_adapter/sonia_common_ros2:srv/SerialService.idl

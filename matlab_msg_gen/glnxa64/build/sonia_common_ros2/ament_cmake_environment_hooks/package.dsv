@@ -1,4 +1,0 @@
-source;share/sonia_common_ros2/local_setup.bash
-source;share/sonia_common_ros2/local_setup.dsv
-source;share/sonia_common_ros2/local_setup.sh
-source;share/sonia_common_ros2/local_setup.zsh
