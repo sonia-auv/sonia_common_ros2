@@ -1,0 +1,4 @@
+uint8 PORT_SIDE = 0
+uint8 STARBOARD = 1
+
+uint8 side

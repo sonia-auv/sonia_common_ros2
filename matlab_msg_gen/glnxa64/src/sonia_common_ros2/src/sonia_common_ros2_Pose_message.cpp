@@ -1,0 +1,192 @@
+// Copyright 2020-2022 The MathWorks, Inc.
+// Common copy functions for sonia_common_ros2/Pose
+#ifdef _MSC_VER
+#pragma warning(push)
+#pragma warning(disable : 4100)
+#pragma warning(disable : 4265)
+#pragma warning(disable : 4456)
+#pragma warning(disable : 4458)
+#pragma warning(disable : 4946)
+#pragma warning(disable : 4244)
+#else
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
+#pragma GCC diagnostic ignored "-Wredundant-decls"
+#pragma GCC diagnostic ignored "-Wnon-virtual-dtor"
+#pragma GCC diagnostic ignored "-Wdelete-non-virtual-dtor"
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-variable"
+#pragma GCC diagnostic ignored "-Wshadow"
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#endif //_MSC_VER
+#include "rclcpp/rclcpp.hpp"
+#include "sonia_common_ros2/msg/pose.hpp"
+#include "visibility_control.h"
+#include "class_loader/multi_library_class_loader.hpp"
+#include "ROS2PubSubTemplates.hpp"
+class SONIA_COMMON_ROS2_EXPORT ros2_sonia_common_ros2_msg_Pose_common : public MATLABROS2MsgInterface<sonia_common_ros2::msg::Pose> {
+  public:
+    virtual ~ros2_sonia_common_ros2_msg_Pose_common(){}
+    virtual void copy_from_struct(sonia_common_ros2::msg::Pose* msg, const matlab::data::Struct& arr, MultiLibLoader loader); 
+    //----------------------------------------------------------------------------
+    virtual MDArray_T get_arr(MDFactory_T& factory, const sonia_common_ros2::msg::Pose* msg, MultiLibLoader loader, size_t size = 1);
+};
+  void ros2_sonia_common_ros2_msg_Pose_common::copy_from_struct(sonia_common_ros2::msg::Pose* msg, const matlab::data::Struct& arr,
+               MultiLibLoader loader) {
+    try {
+        //frame
+        const matlab::data::TypedArray<uint8_t> frame_arr = arr["frame"];
+        msg->frame = frame_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'frame' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'frame' is wrong type; expected a uint8.");
+    }
+    try {
+        //speed
+        const matlab::data::TypedArray<uint8_t> speed_arr = arr["speed"];
+        msg->speed = speed_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'speed' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'speed' is wrong type; expected a uint8.");
+    }
+    try {
+        //position
+        const matlab::data::StructArray position_arr = arr["position"];
+        auto msgClassPtr_position = getCommonObject<geometry_msgs::msg::Point>("ros2_geometry_msgs_msg_Point_common",loader);
+        msgClassPtr_position->copy_from_struct(&msg->position,position_arr[0],loader);
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'position' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'position' is wrong type; expected a struct.");
+    }
+    try {
+        //orientation
+        const matlab::data::StructArray orientation_arr = arr["orientation"];
+        auto msgClassPtr_orientation = getCommonObject<geometry_msgs::msg::Vector3>("ros2_geometry_msgs_msg_Vector3_common",loader);
+        msgClassPtr_orientation->copy_from_struct(&msg->orientation,orientation_arr[0],loader);
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'orientation' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'orientation' is wrong type; expected a struct.");
+    }
+    try {
+        //fine
+        const matlab::data::TypedArray<double> fine_arr = arr["fine"];
+        msg->fine = fine_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'fine' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'fine' is wrong type; expected a double.");
+    }
+    try {
+        //rotation
+        const matlab::data::TypedArray<bool> rotation_arr = arr["rotation"];
+        msg->rotation = rotation_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'rotation' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'rotation' is wrong type; expected a logical.");
+    }
+  }
+  //----------------------------------------------------------------------------
+  MDArray_T ros2_sonia_common_ros2_msg_Pose_common::get_arr(MDFactory_T& factory, const sonia_common_ros2::msg::Pose* msg,
+       MultiLibLoader loader, size_t size) {
+    auto outArray = factory.createStructArray({size,1},{"MessageType","FRAME_ABS_POS_ABS_ANG","FRAME_REL_POS_REL_ANG","FRAME_REL_POS_ABS_ANG","FRAME_ABS_POS_REL_ANG","FRAME_ABS_DEPTH_REL_OTHER","SPEED_NORMAL","SPEED_FAST","SPEED_SLOW","frame","speed","position","orientation","fine","rotation"});
+    for(size_t ctr = 0; ctr < size; ctr++){
+    outArray[ctr]["MessageType"] = factory.createCharArray("sonia_common_ros2/Pose");
+    // FRAME_ABS_POS_ABS_ANG
+    auto currentElement_FRAME_ABS_POS_ABS_ANG = (msg + ctr)->FRAME_ABS_POS_ABS_ANG;
+    outArray[ctr]["FRAME_ABS_POS_ABS_ANG"] = factory.createScalar(currentElement_FRAME_ABS_POS_ABS_ANG);
+    // FRAME_REL_POS_REL_ANG
+    auto currentElement_FRAME_REL_POS_REL_ANG = (msg + ctr)->FRAME_REL_POS_REL_ANG;
+    outArray[ctr]["FRAME_REL_POS_REL_ANG"] = factory.createScalar(currentElement_FRAME_REL_POS_REL_ANG);
+    // FRAME_REL_POS_ABS_ANG
+    auto currentElement_FRAME_REL_POS_ABS_ANG = (msg + ctr)->FRAME_REL_POS_ABS_ANG;
+    outArray[ctr]["FRAME_REL_POS_ABS_ANG"] = factory.createScalar(currentElement_FRAME_REL_POS_ABS_ANG);
+    // FRAME_ABS_POS_REL_ANG
+    auto currentElement_FRAME_ABS_POS_REL_ANG = (msg + ctr)->FRAME_ABS_POS_REL_ANG;
+    outArray[ctr]["FRAME_ABS_POS_REL_ANG"] = factory.createScalar(currentElement_FRAME_ABS_POS_REL_ANG);
+    // FRAME_ABS_DEPTH_REL_OTHER
+    auto currentElement_FRAME_ABS_DEPTH_REL_OTHER = (msg + ctr)->FRAME_ABS_DEPTH_REL_OTHER;
+    outArray[ctr]["FRAME_ABS_DEPTH_REL_OTHER"] = factory.createScalar(currentElement_FRAME_ABS_DEPTH_REL_OTHER);
+    // SPEED_NORMAL
+    auto currentElement_SPEED_NORMAL = (msg + ctr)->SPEED_NORMAL;
+    outArray[ctr]["SPEED_NORMAL"] = factory.createScalar(currentElement_SPEED_NORMAL);
+    // SPEED_FAST
+    auto currentElement_SPEED_FAST = (msg + ctr)->SPEED_FAST;
+    outArray[ctr]["SPEED_FAST"] = factory.createScalar(currentElement_SPEED_FAST);
+    // SPEED_SLOW
+    auto currentElement_SPEED_SLOW = (msg + ctr)->SPEED_SLOW;
+    outArray[ctr]["SPEED_SLOW"] = factory.createScalar(currentElement_SPEED_SLOW);
+    // frame
+    auto currentElement_frame = (msg + ctr)->frame;
+    outArray[ctr]["frame"] = factory.createScalar(currentElement_frame);
+    // speed
+    auto currentElement_speed = (msg + ctr)->speed;
+    outArray[ctr]["speed"] = factory.createScalar(currentElement_speed);
+    // position
+    auto currentElement_position = (msg + ctr)->position;
+    auto msgClassPtr_position = getCommonObject<geometry_msgs::msg::Point>("ros2_geometry_msgs_msg_Point_common",loader);
+    outArray[ctr]["position"] = msgClassPtr_position->get_arr(factory, &currentElement_position, loader);
+    // orientation
+    auto currentElement_orientation = (msg + ctr)->orientation;
+    auto msgClassPtr_orientation = getCommonObject<geometry_msgs::msg::Vector3>("ros2_geometry_msgs_msg_Vector3_common",loader);
+    outArray[ctr]["orientation"] = msgClassPtr_orientation->get_arr(factory, &currentElement_orientation, loader);
+    // fine
+    auto currentElement_fine = (msg + ctr)->fine;
+    outArray[ctr]["fine"] = factory.createScalar(currentElement_fine);
+    // rotation
+    auto currentElement_rotation = (msg + ctr)->rotation;
+    outArray[ctr]["rotation"] = factory.createScalar(currentElement_rotation);
+    }
+    return std::move(outArray);
+  } 
+class SONIA_COMMON_ROS2_EXPORT ros2_sonia_common_ros2_Pose_message : public ROS2MsgElementInterfaceFactory {
+  public:
+    virtual ~ros2_sonia_common_ros2_Pose_message(){}
+    virtual std::shared_ptr<MATLABPublisherInterface> generatePublisherInterface(ElementType /*type*/);
+    virtual std::shared_ptr<MATLABSubscriberInterface> generateSubscriberInterface(ElementType /*type*/);
+    virtual std::shared_ptr<void> generateCppMessage(ElementType /*type*/, const matlab::data::StructArray& /* arr */, MultiLibLoader /* loader */, std::map<std::string,std::shared_ptr<MATLABROS2MsgInterfaceBase>>* /*commonObjMap*/);
+    virtual matlab::data::StructArray generateMLMessage(ElementType  /*type*/ ,void*  /* msg */, MultiLibLoader /* loader */ , std::map<std::string,std::shared_ptr<MATLABROS2MsgInterfaceBase>>* /*commonObjMap*/);
+};  
+  std::shared_ptr<MATLABPublisherInterface> 
+          ros2_sonia_common_ros2_Pose_message::generatePublisherInterface(ElementType /*type*/){
+    return std::make_shared<ROS2PublisherImpl<sonia_common_ros2::msg::Pose,ros2_sonia_common_ros2_msg_Pose_common>>();
+  }
+  std::shared_ptr<MATLABSubscriberInterface> 
+         ros2_sonia_common_ros2_Pose_message::generateSubscriberInterface(ElementType /*type*/){
+    return std::make_shared<ROS2SubscriberImpl<sonia_common_ros2::msg::Pose,ros2_sonia_common_ros2_msg_Pose_common>>();
+  }
+  std::shared_ptr<void> ros2_sonia_common_ros2_Pose_message::generateCppMessage(ElementType /*type*/, 
+                                           const matlab::data::StructArray& arr,
+                                           MultiLibLoader loader,
+                                           std::map<std::string,std::shared_ptr<MATLABROS2MsgInterfaceBase>>* commonObjMap){
+    auto msg = std::make_shared<sonia_common_ros2::msg::Pose>();
+    ros2_sonia_common_ros2_msg_Pose_common commonObj;
+    commonObj.mCommonObjMap = commonObjMap;
+    commonObj.copy_from_struct(msg.get(), arr[0], loader);
+    return msg;
+  }
+  matlab::data::StructArray ros2_sonia_common_ros2_Pose_message::generateMLMessage(ElementType  /*type*/ ,
+                                                    void*  msg ,
+                                                    MultiLibLoader  loader ,
+                                                    std::map<std::string,std::shared_ptr<MATLABROS2MsgInterfaceBase>>*  commonObjMap ){
+    ros2_sonia_common_ros2_msg_Pose_common commonObj;	
+    commonObj.mCommonObjMap = commonObjMap;	
+    MDFactory_T factory;
+    return commonObj.get_arr(factory, (sonia_common_ros2::msg::Pose*)msg, loader);			
+ }
+#include "class_loader/register_macro.hpp"
+// Register the component with class_loader.
+// This acts as a sort of entry point, allowing the component to be discoverable when its library
+// is being loaded into a running process.
+CLASS_LOADER_REGISTER_CLASS(ros2_sonia_common_ros2_msg_Pose_common, MATLABROS2MsgInterface<sonia_common_ros2::msg::Pose>)
+CLASS_LOADER_REGISTER_CLASS(ros2_sonia_common_ros2_Pose_message, ROS2MsgElementInterfaceFactory)
+#ifdef _MSC_VER
+#pragma warning(pop)
+#else
+#pragma GCC diagnostic pop
+#endif //_MSC_VER

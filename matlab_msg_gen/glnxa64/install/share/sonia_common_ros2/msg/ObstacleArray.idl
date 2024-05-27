@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sonia_common_ros2/msg/ObstacleArray.msg
+// generated code does not contain a copyright notice
+
+#include "sonia_common_ros2/msg/ObstacleInfo.idl"
+#include "std_msgs/msg/Header.idl"
+
+module sonia_common_ros2 {
+  module msg {
+    struct ObstacleArray {
+      std_msgs::msg::Header header;
+
+      sequence<sonia_common_ros2::msg::ObstacleInfo> obstacles;
+    };
+  };
+};

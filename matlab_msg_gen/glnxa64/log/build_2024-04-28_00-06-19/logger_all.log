@@ -1,0 +1,145 @@
+[0.665s] DEBUG:colcon:Command line arguments: ['/home/nimai/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon', 'build', '--merge-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja']
+[0.665s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x766bd7b97220>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x766bd7b1dd20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x766bd7b1dd20>>)
+[0.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.737s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extension 'ignore'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extension 'ignore_ament_install'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extensions ['colcon_pkg']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extension 'colcon_pkg'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extensions ['colcon_meta']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extension 'colcon_meta'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extensions ['ros']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonia_common_ros2) by extension 'ros'
+[0.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sonia_common_ros2' with type 'ros.ament_cmake' and name 'sonia_common_ros2'
+[0.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja']'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'cmake_target' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.811s] Level 5:colcon.colcon_core.verb:set package 'sonia_common_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.811s] DEBUG:colcon.colcon_core.verb:Building package 'sonia_common_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install', 'merge_install': True, 'path': '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.813s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.828s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.829s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2' with build type 'ament_cmake'
+[0.829s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/src/sonia_common_ros2'
+[0.839s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.840s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.840s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --build /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2 -- -j8 -l8
+[58.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --build /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2 -- -j8 -l8
+[58.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --install /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2
+[58.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sonia_common_ros2)
+[58.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --install /home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/build/sonia_common_ros2
+[58.415s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install' for CMake module files
+[58.417s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install' for CMake config files
+[58.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonia_common_ros2', 'cmake_prefix_path')
+[58.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/cmake_prefix_path.ps1'
+[58.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/cmake_prefix_path.dsv'
+[58.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/cmake_prefix_path.sh'
+[58.440s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib'
+[58.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonia_common_ros2', 'ld_library_path_lib')
+[58.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/ld_library_path_lib.ps1'
+[58.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/ld_library_path_lib.dsv'
+[58.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/ld_library_path_lib.sh'
+[58.461s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/bin'
+[58.461s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/pkgconfig/sonia_common_ros2.pc'
+[58.465s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/python3.10/site-packages'
+[58.465s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/bin'
+[58.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.ps1'
+[58.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.dsv'
+[58.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.sh'
+[58.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.bash'
+[58.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.zsh'
+[58.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/colcon-core/packages/sonia_common_ros2)
+[58.540s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sonia_common_ros2)
+[58.563s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install' for CMake module files
+[58.565s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install' for CMake config files
+[58.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonia_common_ros2', 'cmake_prefix_path')
+[58.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/cmake_prefix_path.ps1'
+[58.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/cmake_prefix_path.dsv'
+[58.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/cmake_prefix_path.sh'
+[58.588s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib'
+[58.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonia_common_ros2', 'ld_library_path_lib')
+[58.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/ld_library_path_lib.ps1'
+[58.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/ld_library_path_lib.dsv'
+[58.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/hook/ld_library_path_lib.sh'
+[58.608s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/bin'
+[58.608s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/pkgconfig/sonia_common_ros2.pc'
+[58.609s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/lib/python3.10/site-packages'
+[58.609s] Level 1:colcon.colcon_core.environment:checking '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/bin'
+[58.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.ps1'
+[58.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.dsv'
+[58.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.sh'
+[58.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.bash'
+[58.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/sonia_common_ros2/package.zsh'
+[58.629s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/share/colcon-core/packages/sonia_common_ros2)
+[58.629s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[58.630s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[58.630s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[58.630s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[58.641s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[58.641s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[58.641s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[58.641s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify_send'
+[58.678s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[58.697s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/local_setup.ps1'
+[58.698s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/_local_setup_util_ps1.py'
+[58.701s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/setup.ps1'
+[58.715s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/local_setup.sh'
+[58.715s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/_local_setup_util_sh.py'
+[58.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/setup.sh'
+[58.727s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/local_setup.bash'
+[58.727s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/setup.bash'
+[58.737s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/local_setup.zsh'
+[58.738s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nimai/ros2_sonia_ws/src/sonia_common_ros2/matlab_msg_gen/glnxa64/install/setup.zsh'
