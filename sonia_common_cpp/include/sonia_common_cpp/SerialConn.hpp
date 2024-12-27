@@ -1,7 +1,7 @@
 /**
- * \file	SerialConnection.h
- * \author	Nimai Jariwala
- * \date	21/01/2023
+ * \file    SerialConnection.h
+ * \author  Nimai Jariwala
+ * \date    21/01/2023
  *
  * \copyright Copyright (c) 2021 S.O.N.I.A. All rights reserved.
  *
@@ -88,4 +88,4 @@ namespace sonia_common_cpp
         bool m_is_blocking;
     };
 
-} // namespace sonia_cpp
+} // namespace sonia_common_cpp
