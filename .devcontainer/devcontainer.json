@@ -20,7 +20,7 @@
               "redhat.vscode-xml",
               "tamasfe.even-better-toml",
               "timonwong.shellcheck",
-              "yzhang.markdown-all-in-one",
+              "yzhang.markdown-all-in-one"
           ],
           "settings": {
               "files.associations": {
@@ -32,7 +32,7 @@
           }
       }
   },
-  "workspaceFolder": "/home/sonia/ros2_sonia_ws",
+  "workspaceFolder": "/home/sonia/ros2_sonia_ws/src/${localWorkspaceFolderBasename}",
   "workspaceMount": "source=${localWorkspaceFolder},target=/home/sonia/ros2_sonia_ws/src/${localWorkspaceFolderBasename},type=bind",
   "mounts": [],
   "runArgs": [

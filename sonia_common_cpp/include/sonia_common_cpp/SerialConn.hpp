@@ -25,67 +25,80 @@
 
 #pragma once
 
-#include <string>
-
 #include <termios.h>
 #include <unistd.h>
+
+#include <string>
 
 namespace sonia_common_cpp
 {
 
     class SerialConn
     {
-    public:
-        /// @brief Packet Buffer size.
+        public:
         const int BUFFER_SIZE = 1024;
 
-        /// @brief Constructor for serial connection to a port.
-        /// @param port Port number.
+        /**
+         * @brief Constructor for serial connection to a port.
+         *
+         * @param port Port number.
+         * @param baud Baud Rate.
+         */
         SerialConn(std::string port, speed_t baud);
+
+        /**
+         * @brief Constructor for serial connection to a port.
+         *
+         * @param port Port number.
+         * @param baud Baud Rate.
+         * @param isBlocking is line blocking, defaults to True.
+         */
         SerialConn(std::string port, speed_t baud, bool isBlocking);
 
-        /// @brief Destructor.
+        /**
+         * @brief Destructor.
+         */
         ~SerialConn();
 
         /// @brief Receive data from the connected serial port.
         /// @param count The number of packets to read.
         /// @param pData Char array that will store the received data.
         /// @return Status of the received packaet as a byte code.
-        ssize_t ReadPackets(size_t count, uint8_t *pData);
+        ssize_t ReadPackets(size_t count, uint8_t *pData) const;
 
         /// @brief Read one packet from the serial stream.
         /// @param pData Char array to store the data.
         /// @param offset Stream offset.
-        ssize_t ReadOnce(uint8_t *pData, int offset);
+        ssize_t ReadOnce(uint8_t *pData, int offset) const;
 
         /// @brief Flush the stream.
-        void Flush();
+        void Flush() const;
 
         /// @brief Transmit data to the stream using a string.
         /// @param data The data to send as a string.
         /// @return Byte Status code.
-        ssize_t Transmit(const std::string data);
+        ssize_t Transmit(std::string data) const;
 
         /// @brief Transmit data to the stream using a char array
         /// @param pData Char data array to send.
         /// @param length Length of the data array.
         /// @return Byte Status Code.
-        ssize_t Transmit(const uint8_t *pData, size_t length);
+        ssize_t Transmit(const uint8_t *pData, size_t length) const;
 
         bool OpenPort();
 
-    private:
+        private:
         /// @brief Configurations for the device
-        struct termios m_options;
+        struct termios _options;
 
         /// @brief The Serial port.
-        int m_fd;
+        int _fd;
 
-        std::string m_port;
+        std::string _port;
 
-        speed_t m_baud;
+        speed_t _baud;
 
-        bool m_is_blocking;
+        bool _isBlocking;
     };
 
-} // namespace sonia_common_cpp
+}  // namespace sonia_common_cpp

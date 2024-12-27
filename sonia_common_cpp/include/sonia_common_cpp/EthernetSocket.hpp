@@ -69,7 +69,7 @@ namespace sonia_common_cpp
          * @return true if successful.
          * @return false if failed to send.
          */
-        bool Send(const char *data);
+        bool Send(const char *data) const;
 
         /**
          * @brief Wait for data from UDP Port.

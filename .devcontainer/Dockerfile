@@ -11,7 +11,9 @@ RUN apt update -q && apt upgrade -q -y \
     python3-flake8-docstrings \
     python3-pip \
     python3-pytest-cov \
-    ros-dev-tools
+    ros-dev-tools \
+    clang-format \ 
+    clang-tidy
 
 # Create and switch to user
 RUN groupadd -g $GID $USERNAME \
@@ -21,7 +23,7 @@ USER $USERNAME
 
 # Create workspace so that user own this directory
 RUN mkdir -p /home/$USERNAME/ros2_sonia_ws/src
-WORKDIR /home/$USERNAME/ros2_sonia_ws
+WORKDIR /home/$USERNAME/ros2_sonia_ws/src/sonia_common_ros2
 
 # Copy configuration files
 RUN echo 'source /opt/ros/'$ROS_DISTRO'/setup.bash' >> /home/$USERNAME/.bashrc \
