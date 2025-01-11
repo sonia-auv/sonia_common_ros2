@@ -1,16 +1,17 @@
-#include "EthernetSocket.h"
-#include <unistd.h>
+#include "EthernetSocket.hpp"
+
 #include <fcntl.h>
-#include <memory>
 #include <sys/socket.h>
+#include <unistd.h>
+
+#include <memory>
 
 
 namespace sonia_common_cpp
 {
-    EthernetSocket::EthernetSocket(size_t dataSize)
-        : _data{new char[dataSize]}, _size{dataSize}
+    EthernetSocket::EthernetSocket(size_t dataSize) : _data{new char[dataSize]}, _size{dataSize}
     {
-        if (!_data)
+        if (_data == nullptr)
         {
             this->~EthernetSocket();
         }
@@ -30,9 +31,8 @@ namespace sonia_common_cpp
 
     //------------------------------------------------------------------------------
     //
-    bool EthernetSocket::ConnectUDP(int port)
+    bool EthernetSocket::ConnectUDP(const int port)
     {
-
         bzero(&_server, sizeof(_server));
         _server.sin_addr.s_addr = htonl(INADDR_ANY);
         _server.sin_family = AF_INET;
@@ -43,7 +43,7 @@ namespace sonia_common_cpp
         {
             return false;
         }
-        if (bind(_socketUDP, (struct sockaddr *)&_server, sizeof(_server)) < 0)
+        if (bind(_socketUDP, reinterpret_cast<struct sockaddr *>(&_server), sizeof(_server)) < 0)
         {
             return false;
         }
@@ -52,9 +52,8 @@ namespace sonia_common_cpp
 
     //------------------------------------------------------------------------------
     //
-    bool EthernetSocket::ConnectTCP(std::string addr, int port)
+    bool EthernetSocket::ConnectTCP(const std::string addr, const int port)
     {
-
         bzero(&_server, sizeof(_server));
 
         _server.sin_addr.s_addr = inet_addr(addr.c_str());
@@ -67,7 +66,8 @@ namespace sonia_common_cpp
             return false;
         }
 
-        int res, opt;
+        int res;
+        int opt;
         if ((opt = fcntl(_socketTCP, F_GETFL, NULL)) < 0)
         {
             return false;
@@ -83,7 +83,7 @@ namespace sonia_common_cpp
         std::unique_ptr<timeval> timeout = std::make_unique<timeval>();
         timeout->tv_sec = 5;
 
-        if ((res = connect(_socketTCP, (struct sockaddr *)&_server, sizeof(_server))) < 0)
+        if ((res = connect(_socketTCP, reinterpret_cast<struct sockaddr *>(&_server), sizeof(_server))) < 0)
         {
             if (errno == EINPROGRESS)
             {
@@ -108,46 +108,22 @@ namespace sonia_common_cpp
         {
             return false;
         }
-        if (res > 0)
-        {
-            return true;
-        }
-        return false;
+        return res > 0;
     }
 
 
     bool EthernetSocket::_receive(int socket)
     {
         socklen_t len = sizeof(_dvl);
-        if (recvfrom(socket, _data, _size, 0, (struct sockaddr *)&_dvl, &len) < 0)
-        {
-            return false;
-        }
-        return true;
+        return recvfrom(socket, _data, _size, 0, reinterpret_cast<struct sockaddr *>(&_dvl), &len) >= 0;
     }
 
-    bool EthernetSocket::ReceiveUDP()
-    {
-        return _receive(_socketUDP);
-    }
+    bool EthernetSocket::ReceiveUDP() { return _receive(_socketUDP); }
 
-    bool EthernetSocket::ReceiveTCP()
-    {
-        return _receive(_socketTCP);
-    }
+    bool EthernetSocket::ReceiveTCP() { return _receive(_socketTCP); }
 
-    bool EthernetSocket::Send(const char *data)
-    {
-        if (send(_socketTCP, data, strlen(data), 0) < 0)
-        {
-            return false;
-        }
-        return true;
-    }
+    bool EthernetSocket::Send(const char *data) const { return (send(_socketTCP, data, strlen(data), 0) < 0); }
 
-    char *EthernetSocket::GetRawData()
-    {
-        return _data;
-    }
+    char *EthernetSocket::GetRawData() { return _data; }
 
-}
+}  // namespace sonia_common_cpp
