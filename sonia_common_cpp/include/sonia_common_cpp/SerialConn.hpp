@@ -28,8 +28,8 @@
 #include <termios.h>
 #include <unistd.h>
 
+#include <mutex>
 #include <string>
-
 namespace sonia_common_cpp
 {
 
@@ -64,12 +64,12 @@ namespace sonia_common_cpp
         /// @param count The number of packets to read.
         /// @param pData Char array that will store the received data.
         /// @return Status of the received packaet as a byte code.
-        ssize_t ReadPackets(size_t count, uint8_t *pData) const;
+        ssize_t ReadPackets(size_t count, uint8_t *pData);
 
         /// @brief Read one packet from the serial stream.
         /// @param pData Char array to store the data.
         /// @param offset Stream offset.
-        ssize_t ReadOnce(uint8_t *pData, int offset) const;
+        ssize_t ReadOnce(uint8_t *pData, int offset);
 
         /// @brief Flush the stream.
         void Flush() const;
@@ -77,13 +77,13 @@ namespace sonia_common_cpp
         /// @brief Transmit data to the stream using a string.
         /// @param data The data to send as a string.
         /// @return Byte Status code.
-        ssize_t Transmit(std::string data) const;
+        ssize_t Transmit(std::string data);
 
         /// @brief Transmit data to the stream using a char array
         /// @param pData Char data array to send.
         /// @param length Length of the data array.
         /// @return Byte Status Code.
-        ssize_t Transmit(const uint8_t *pData, size_t length) const;
+        ssize_t Transmit(const uint8_t *pData, size_t length);
 
         bool OpenPort();
 
@@ -99,6 +99,8 @@ namespace sonia_common_cpp
         speed_t _baud;
 
         bool _isBlocking;
+
+        std::mutex _lock;
     };
 
 }  // namespace sonia_common_cpp
