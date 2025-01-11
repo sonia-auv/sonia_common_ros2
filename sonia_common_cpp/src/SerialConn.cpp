@@ -17,20 +17,40 @@ namespace sonia_common_cpp
         close(_fd);
     }
 
-    ssize_t SerialConn::ReadPackets(size_t count, uint8_t *pData) const
+    ssize_t SerialConn::ReadPackets(size_t count, uint8_t *pData)
     {
         pData[0] = 0;
-
-        return read(_fd, pData, count);
+        _lock.lock();
+        ssize_t ret = read(_fd, pData, count);
+        _lock.unlock();
+        return ret;
     }
 
-    ssize_t SerialConn::ReadOnce(uint8_t *pData, int offset) const { return read(_fd, (pData + offset), 1); }
+    ssize_t SerialConn::ReadOnce(uint8_t *pData, int offset)
+    {
+        _lock.lock();
+        ssize_t ret = read(_fd, (pData + offset), 1);
+        _lock.unlock();
+        return ret;
+    }
 
     void SerialConn::Flush() const { tcflush(_fd, TCIOFLUSH); }
 
-    ssize_t SerialConn::Transmit(const std::string data) const { return write(_fd, data.c_str(), data.size()); }
+    ssize_t SerialConn::Transmit(const std::string data)
+    {
+        _lock.lock();
+        ssize_t ret = write(_fd, data.c_str(), data.size());
+        _lock.unlock();
+        return ret;
+    }
 
-    ssize_t SerialConn::Transmit(const uint8_t *pData, size_t length) const { return write(_fd, pData, length); }
+    ssize_t SerialConn::Transmit(const uint8_t *pData, size_t length)
+    {
+        _lock.lock();
+        ssize_t ret = write(_fd, pData, length);
+        _lock.unlock();
+        return ret;
+    }
 
     bool SerialConn::OpenPort()
     {
