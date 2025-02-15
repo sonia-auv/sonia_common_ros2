@@ -6,7 +6,7 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
-
+os.environ["AUV"] = "AUV8"
 def generate_launch_description():
     imu_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -17,7 +17,7 @@ def generate_launch_description():
     dvl_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('dvl_port_manager'), 'launch'),
-            '/launch_dvl.py'])
+            '/launch.py'])
         )
     
     depth_launch = IncludeLaunchDescription(
@@ -38,10 +38,17 @@ def generate_launch_description():
             '/launch.py'])
         )
 
+    cam_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('cam_port_manager'), 'launch'),
+            '/launch.py'])
+        )
+    
     return LaunchDescription([
         imu_launch,
         dvl_launch,
         depth_launch,
         rs485_launch,
-        proc_control_launch
+        proc_control_launch,
+        cam_launch
     ])
