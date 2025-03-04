@@ -1,0 +1,5 @@
+uint8 element
+uint8 side
+uint8 action
+---
+bool success
