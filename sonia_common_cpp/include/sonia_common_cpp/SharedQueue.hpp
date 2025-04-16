@@ -1,12 +1,42 @@
-#include "SharedQueue.tpp"
+#pragma once
+
+#include <iostream>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
 
 namespace sonia_common_cpp
 {
     template <typename T>
-    SharedQueue<T>::SharedQueue(){}
+    class SharedQueue
+    {
+        public:
+            SharedQueue();
+            ~SharedQueue();
+
+            T& front();
+            void pop_front();
+            T get_n_pop_front();
+
+            void push_back(const T& item);
+            void push_back(T&& item);
+
+            unsigned long size();
+            bool empty();
+
+        private:
+            std::deque<T> queue_;
+            std::mutex mutex_;
+            std::condition_variable cond_;
+    };
 
     template <typename T>
-    SharedQueue<T>::~SharedQueue(){}
+    SharedQueue<T>::SharedQueue()
+    {}
+
+    template <typename T>
+    SharedQueue<T>::~SharedQueue()
+    {}
 
     template <typename T>
     T& SharedQueue<T>::front()
@@ -50,9 +80,8 @@ namespace sonia_common_cpp
     {
         std::unique_lock<std::mutex> mlock(mutex_);
         queue_.push_back(item);
-        mlock.unlock();     // unlock before notificiation to minimize mutex con
-        cond_.notify_one(); // notify one waiting thread
-
+        mlock.unlock();      // unlock before notificiation to minimize mutex con
+        cond_.notify_one();  // notify one waiting thread
     }
 
     template <typename T>
@@ -60,9 +89,8 @@ namespace sonia_common_cpp
     {
         std::unique_lock<std::mutex> mlock(mutex_);
         queue_.push_back(std::move(item));
-        mlock.unlock();     // unlock before notificiation to minimize mutex con
-        cond_.notify_one(); // notify one waiting thread
-
+        mlock.unlock();      // unlock before notificiation to minimize mutex con
+        cond_.notify_one();  // notify one waiting thread
     }
 
     template <typename T>
@@ -71,7 +99,7 @@ namespace sonia_common_cpp
         std::unique_lock<std::mutex> mlock(mutex_);
         unsigned long size = queue_.size();
         mlock.unlock(
-            
+
         );
         cond_.notify_one();
         return size;
