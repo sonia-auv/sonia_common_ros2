@@ -1,35 +1,41 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-	"name": "Sonia Common",
-	"build": {
-		// Sets the run context to one level up instead of the .devcontainer folder.
-		"context": "..",
-		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../Dockerfile.amd64"
-	},
-	"workspaceMount": "source=${localWorkspaceFolder},target=/root/sonia_ws_ros2/src/${localWorkspaceFolderBasename},type=bind",
-	"workspaceFolder": "/root/sonia_ws_ros2/src/${localWorkspaceFolderBasename}",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cat /etc/os-release",
-
-	// Configure tool-specific properties.
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-iot.vscode-ros",
-				"ms-vscode.cpptools-extension-pack"
-			]
-		}
-	}
-
-	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "devcontainer"
+  "name": "ROS 2 Workspace humble-ros-base",
+  "remoteUser": "sonia",
+  "build": {
+      "dockerfile": "Dockerfile",
+      "args": {
+          "USERNAME": "sonia",
+          "GID": "1000",
+          "UID": "1000"
+      }
+  },
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "ms-python.python",
+              "charliermarsh.ruff",
+              "ms-vscode.cpptools-extension-pack",
+              "ms-iot.vscode-ros",
+              "smilerobotics.urdf",
+              "redhat.vscode-xml",
+              "tamasfe.even-better-toml",
+              "timonwong.shellcheck",
+              "yzhang.markdown-all-in-one"
+          ],
+          "settings": {
+              "files.associations": {
+                  "*.rviz": "yaml",
+                  "*.srdf": "xml",
+                  "*.urdf": "xml",
+                  "*.xacro": "xml"
+              }
+          }
+      }
+  },
+  "workspaceFolder": "/home/sonia/ros2_sonia_ws/src/${localWorkspaceFolderBasename}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/sonia/ros2_sonia_ws/src/${localWorkspaceFolderBasename},type=bind",
+  "mounts": [],
+  "runArgs": [
+      "--net=host"
+  ]
 }

@@ -1,7 +1,7 @@
 /**
- * \file	SerialConnection.h
- * \author	Nimai Jariwala
- * \date	21/01/2023
+ * \file    SerialConnection.h
+ * \author  Nimai Jariwala
+ * \date    21/01/2023
  *
  * \copyright Copyright (c) 2021 S.O.N.I.A. All rights reserved.
  *
@@ -25,26 +25,39 @@
 
 #pragma once
 
-#include <string>
-
 #include <termios.h>
 #include <unistd.h>
 
+#include <mutex>
+#include <string>
 namespace sonia_common_cpp
 {
 
     class SerialConn
     {
-    public:
-        /// @brief Packet Buffer size.
+        public:
         const int BUFFER_SIZE = 1024;
 
-        /// @brief Constructor for serial connection to a port.
-        /// @param port Port number.
+        /**
+         * @brief Constructor for serial connection to a port.
+         *
+         * @param port Port number.
+         * @param baud Baud Rate.
+         */
         SerialConn(std::string port, speed_t baud);
+
+        /**
+         * @brief Constructor for serial connection to a port.
+         *
+         * @param port Port number.
+         * @param baud Baud Rate.
+         * @param isBlocking is line blocking, defaults to True.
+         */
         SerialConn(std::string port, speed_t baud, bool isBlocking);
 
-        /// @brief Destructor.
+        /**
+         * @brief Destructor.
+         */
         ~SerialConn();
 
         /// @brief Receive data from the connected serial port.
@@ -59,12 +72,12 @@ namespace sonia_common_cpp
         ssize_t ReadOnce(uint8_t *pData, int offset);
 
         /// @brief Flush the stream.
-        void Flush();
+        void Flush() const;
 
         /// @brief Transmit data to the stream using a string.
         /// @param data The data to send as a string.
         /// @return Byte Status code.
-        ssize_t Transmit(const std::string data);
+        ssize_t Transmit(std::string data);
 
         /// @brief Transmit data to the stream using a char array
         /// @param pData Char data array to send.
@@ -74,18 +87,20 @@ namespace sonia_common_cpp
 
         bool OpenPort();
 
-    private:
+        private:
         /// @brief Configurations for the device
-        struct termios m_options;
+        struct termios _options;
 
         /// @brief The Serial port.
-        int m_fd;
+        int _fd;
 
-        std::string m_port;
+        std::string _port;
 
-        speed_t m_baud;
+        speed_t _baud;
 
-        bool m_is_blocking;
+        bool _isBlocking;
+
+        std::mutex _lock;
     };
 
-} // namespace sonia_cpp
+}  // namespace sonia_common_cpp

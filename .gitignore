@@ -2,3 +2,5 @@ venv
 __pycache__
 apidocs
 .vscode
+matlab_msg_gen
+html
