@@ -3,5 +3,6 @@ uint8 FRONT = 1
 uint8 BOTTOM = 2
 uint8 BOTH = 3
 
-uint8 ai_activation
+uint8 camera_choice
+int8 model_choice
 ---
