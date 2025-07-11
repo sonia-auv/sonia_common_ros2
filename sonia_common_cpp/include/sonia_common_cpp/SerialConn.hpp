@@ -43,8 +43,9 @@ namespace sonia_common_cpp
          *
          * @param port Port number.
          * @param baud Baud Rate.
+         * @param timeout Read timeout in seconds. Default is 5.
          */
-        SerialConn(std::string port, speed_t baud);
+        SerialConn(std::string port, speed_t baud, uint8_t timeout);
 
         /**
          * @brief Constructor for serial connection to a port.
@@ -99,6 +100,8 @@ namespace sonia_common_cpp
         speed_t _baud;
 
         bool _isBlocking;
+
+        uint8_t _timeout;
 
         std::mutex _lock;
     };

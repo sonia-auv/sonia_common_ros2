@@ -5,7 +5,7 @@
 
 namespace sonia_common_cpp
 {
-    SerialConn::SerialConn(std::string port, speed_t baud) : _port(port), _baud(baud), _isBlocking(true) {}
+    SerialConn::SerialConn(std::string port, speed_t baud, uint8_t timeout = 5) : _port(port), _baud(baud), _isBlocking(true), _timeout(timeout) {}
 
     SerialConn::SerialConn(std::string port, speed_t baud, bool isBlocking)
         : _port(port), _baud(baud), _isBlocking(isBlocking)
@@ -20,7 +20,25 @@ namespace sonia_common_cpp
     ssize_t SerialConn::ReadPackets(size_t count, uint8_t *pData)
     {
         pData[0] = 0;
+        fd_set set;
+        struct timeval timeout;
+
+        FD_ZERO(&set);
+        FD_SET(_fd, &set);
+
+        timeout.tv_sec = _timeout;
+        timeout.tv_usec = 0;
+        
+        int rv;
         _lock.lock();
+        rv = select(_fd + 1, &set, NULL, NULL, &timeout);
+        if (rv == -1) {
+            _lock.unlock();
+            return -1; // Error
+        } else if (rv == 0) {
+            _lock.unlock();
+            return 0; // Timeout, no data
+        }
         ssize_t ret = read(_fd, pData, count);
         _lock.unlock();
         return ret;
