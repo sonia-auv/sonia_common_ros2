@@ -7,8 +7,8 @@ namespace sonia_common_cpp
 {
     SerialConn::SerialConn(std::string port, speed_t baud, uint8_t timeout = 5) : _port(port), _baud(baud), _isBlocking(true), _timeout(timeout) {}
 
-    SerialConn::SerialConn(std::string port, speed_t baud, bool isBlocking)
-        : _port(port), _baud(baud), _isBlocking(isBlocking)
+    SerialConn::SerialConn(std::string port, speed_t baud, bool isBlocking, uint8_t timeout = 5)
+        : _port(port), _baud(baud), _isBlocking(isBlocking), _timeout(timeout)
     {}
 
     SerialConn::~SerialConn()

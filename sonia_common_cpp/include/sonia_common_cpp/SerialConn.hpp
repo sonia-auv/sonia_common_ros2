@@ -53,8 +53,9 @@ namespace sonia_common_cpp
          * @param port Port number.
          * @param baud Baud Rate.
          * @param isBlocking is line blocking, defaults to True.
+	 * @param timeout REad timeout in seconds, Defaults to 5.
          */
-        SerialConn(std::string port, speed_t baud, bool isBlocking);
+        SerialConn(std::string port, speed_t baud, bool isBlocking, uint8_t timeout);
 
         /**
          * @brief Destructor.
