@@ -37,6 +37,12 @@ def generate_launch_description():
             get_package_share_directory('proc_control'), 'launch'),
             '/launch.py'])
         )
+    
+    proc_planner_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('proc_planner_ros2'), 'launch'),
+            '/launch.py'])
+        )
 
     cam_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -50,5 +56,6 @@ def generate_launch_description():
 #        depth_launch,
         rs485_launch,
         proc_control_launch,
-#        cam_launch
+        cam_launch,
+        proc_planner_launch
     ])
