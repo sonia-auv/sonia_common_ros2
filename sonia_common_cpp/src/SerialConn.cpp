@@ -14,6 +14,7 @@ namespace sonia_common_cpp
     SerialConn::~SerialConn()
     {
         // Close port on destruction.
+        Flush();
         close(_fd);
     }
 
