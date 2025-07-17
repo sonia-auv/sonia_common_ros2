@@ -1,7 +1,8 @@
 #Goal
+string mission
 ---
 #Result
 bool success
 ---
 #Feedback
-bool status
+string status
