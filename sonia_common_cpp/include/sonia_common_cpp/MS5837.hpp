@@ -8,13 +8,6 @@ namespace sonia_common_cpp
 {
     class MS5837 {
         public:
-            static const float Pa;
-            static const float bar;
-            static const float mbar;
-
-            static const uint8_t MS5837_30BA;
-            static const uint8_t MS5837_02BA;
-            static const uint8_t MS5837_UNRECOGNISED;
 
             MS5837();
 
