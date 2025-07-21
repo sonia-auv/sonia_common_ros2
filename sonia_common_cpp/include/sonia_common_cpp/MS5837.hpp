@@ -60,13 +60,13 @@ namespace sonia_common_cpp
             const uint8_t MS5837_CONVERT_D1_8192 = 0x4A;
             const uint8_t MS5837_CONVERT_D2_8192 = 0x5A;
 
-            const float MS5837::Pa = 100.0f;
-            const float MS5837::bar = 0.001f;
-            const float MS5837::mbar = 1.0f;
+            const float Pa = 100.0f;
+            const float bar = 0.001f;
+            const float mbar = 1.0f;
 
-            const uint8_t MS5837::MS5837_30BA = 0;
-            const uint8_t MS5837::MS5837_02BA = 1;
-            const uint8_t MS5837::MS5837_UNRECOGNISED = 255;
+            const uint8_t MS5837_30BA = 0;
+            const uint8_t MS5837_02BA = 1;
+            const uint8_t MS5837_UNRECOGNISED = 255;
 
             const uint16_t MS5837_02BA_MAX_SENSITIVITY = 49000;
             const uint16_t MS5837_02BA_30BA_SEPARATION = 37000;
