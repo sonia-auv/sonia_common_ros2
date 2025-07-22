@@ -1,5 +1,3 @@
-#include <linux/i2c.h>
-#include <i2c/smbus.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -32,7 +30,7 @@ namespace sonia_common_cpp
 		// Wait for reset to complete
 		usleep(10);
 
-		uint8_t * res;
+		uint8_t res[3];
 		// Read calibration values and CRC
 		for ( uint8_t i = 0 ; i < 7 ; i++ ) {
 			i2c_smbus_write_byte(file,MS5837_PROM_READ+i*2);
@@ -88,7 +86,7 @@ namespace sonia_common_cpp
 
 	void MS5837::read() {
 
-		uint8_t * res;
+		uint8_t res[3];
 		//Check that _i2cPort is not NULL (i.e. has the user forgoten to call .init or .begin?)
 		if (file < 0)
 		{

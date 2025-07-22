@@ -1,6 +1,9 @@
-
+#pragma once
+extern "C"
+{
 #include <linux/i2c.h>
 #include <i2c/smbus.h>
+}
 #include <stdint.h>
 
 
