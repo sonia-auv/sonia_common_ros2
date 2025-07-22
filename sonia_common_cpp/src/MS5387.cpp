@@ -36,7 +36,7 @@ namespace sonia_common_cpp
 			i2c_smbus_write_byte(file,MS5837_PROM_READ+i*2);
 
 			i2c_smbus_read_block_data(file,MS5837_ADDR,res);
-			C[i] = (res[0] << 8) | res[1];
+			C[i] = (res[1] << 8) | res[0];
 		}
 
 		// Verify that data is correct with CRC
@@ -102,7 +102,7 @@ namespace sonia_common_cpp
 		i2c_smbus_read_block_data(file,MS5837_ADDR,res);
 
 		D1_pres = 0;
-		D1_pres = (res[0] << 8) |(res[1] << 8) | res[2];
+		D1_pres = (res[2] << 16) |(res[1] << 8) | res[0];
 
 		// Request D2 conversion
 		i2c_smbus_write_byte(file,MS5837_CONVERT_D2_8192);
@@ -111,7 +111,7 @@ namespace sonia_common_cpp
 	
 		i2c_smbus_read_block_data(file,MS5837_ADDR,res);
 		D2_temp = 0;
-		D2_temp = (res[0] << 8) |(res[1] << 8) | res[2];
+		D2_temp = (res[2] << 16) |(res[1] << 8) | res[0];
 
 		calculate();
 	}
