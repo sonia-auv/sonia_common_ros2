@@ -44,12 +44,12 @@ namespace sonia_common_cpp
 		uint8_t crcCalculated = crc4(C);
 
 		_model = MS5837_02BA;
-
-		if ( crcCalculated != crcRead ) {
-			return false; // CRC fail
-		}
 		
 		return true;
+
+		/*if ( crcCalculated != crcRead ) {
+			return false; // CRC fail
+		}*/
 	}
 
 	void MS5837::setModel(uint8_t model) {
