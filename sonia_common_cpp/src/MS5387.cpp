@@ -43,7 +43,7 @@ namespace sonia_common_cpp
 		uint8_t crcRead = C[0] >> 12;
 		uint8_t crcCalculated = crc4(C);
 
-		_model = MS5837_02BA;
+		_model = MS5837_30BA;
 		
 		return true;
 
@@ -115,7 +115,7 @@ namespace sonia_common_cpp
 
 		// Terms called
 		dT = D2_temp-uint32_t(C[5])*256l;
-		if ( _model == MS5837_02BA ) {
+		if ( _model == MS5837_30BA ) {
 			SENS = int64_t(C[1])*65536l+(int64_t(C[3])*dT)/128l;
 			OFF = int64_t(C[2])*131072l+(int64_t(C[4])*dT)/64l;
 			P = (D1_pres*SENS/(2097152l)-OFF)/(32768l);
@@ -129,7 +129,7 @@ namespace sonia_common_cpp
 		TEMP = 2000l+int64_t(dT)*C[6]/8388608LL;
 
 		//Second order compensation
-		if ( _model == MS5837_02BA ) {
+		if ( _model == MS5837_30BA ) {
 			if((TEMP/100)<20){         //Low temp
 				Ti = (11*int64_t(dT)*int64_t(dT))/(34359738368LL);
 				OFFi = (31*(TEMP-2000)*(TEMP-2000))/8;
@@ -157,7 +157,7 @@ namespace sonia_common_cpp
 
 		TEMP = (TEMP-Ti);
 
-		if ( _model == MS5837_02BA ) {
+		if ( _model == MS5837_30BA ) {
 			P = (((D1_pres*SENS2)/2097152l-OFF2)/32768l);
 		} else {
 			P = (((D1_pres*SENS2)/2097152l-OFF2)/8192l);
@@ -165,7 +165,7 @@ namespace sonia_common_cpp
 	}
 
 	float MS5837::pressure(float conversion) {
-		if ( _model == MS5837_02BA ) {
+		if ( _model == MS5837_30BA ) {
 			return P*conversion/100.0f;
 		}
 		else {
