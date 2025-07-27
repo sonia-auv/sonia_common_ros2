@@ -13,7 +13,7 @@ namespace sonia_common_cpp
 
 	
 	MS5837::MS5837() {
-		fluidDensity = 1029;
+		_fluidDensity = 1029;
 	}
 
 	bool MS5837::init(char *filename, int slave) {
@@ -36,39 +36,19 @@ namespace sonia_common_cpp
 			i2c_smbus_write_byte(file,MS5837_PROM_READ+i*2);
 
 			i2c_smbus_read_block_data(file,MS5837_ADDR,res);
-			C[i] = (res[1] << 8) | res[0];
+			C[i] = (res[0] << 8) | res[1];
 		}
 
 		// Verify that data is correct with CRC
 		uint8_t crcRead = C[0] >> 12;
 		uint8_t crcCalculated = crc4(C);
 
+		_model = MS5837_02BA;
+
 		if ( crcCalculated != crcRead ) {
 			return false; // CRC fail
 		}
-
-		// PROM Word 1 represents the sensor's pressure sensitivity calibration
-		// Set _model according to the experimental pressure sensitivity thresholds
-		if (C[1] < MS5837_30BA_MIN_SENSITIVITY || C[1] > MS5837_02BA_MAX_SENSITIVITY)
-		{
-			_model = MS5837_UNRECOGNISED;
-		}
-		else if (C[1] > MS5837_02BA_30BA_SEPARATION)
-		{
-			_model = MS5837_02BA;
-		}
-		else
-		{
-			_model = MS5837_30BA;
-		}
-
-		// TODO: extract and store/report sensor package type from bits 11-5 of PROM Word 0,
-		// per https://github.com/ArduPilot/ardupilot/pull/29122#pullrequestreview-2837597764
-
-		// The sensor has passed the CRC check, so we should return true even if
-		// the sensor version is unrecognised.
-		// (The MS5637 has the same address as the MS5837 and will also pass the CRC check)
-		// (but will hopefully be unrecognised.)
+		
 		return true;
 	}
 
@@ -81,7 +61,7 @@ namespace sonia_common_cpp
 	}
 
 	void MS5837::setFluidDensity(float density) {
-		fluidDensity = density;
+		_fluidDensity = density;
 	}
 
 	void MS5837::read() {
@@ -102,16 +82,20 @@ namespace sonia_common_cpp
 		i2c_smbus_read_block_data(file,MS5837_ADDR,res);
 
 		D1_pres = 0;
-		D1_pres = (res[2] << 16) |(res[1] << 8) | res[0];
+		D1_pres = (res[0] << 16) |(res[1] << 8) | res[2];
+		if(cptTemp <=50){
+			// Request D2 conversion
+			i2c_smbus_write_byte(file,MS5837_CONVERT_D2_8192);
 
-		// Request D2 conversion
-		i2c_smbus_write_byte(file,MS5837_CONVERT_D2_8192);
-
-		usleep(20); // Max conversion time per datasheet
-	
-		i2c_smbus_read_block_data(file,MS5837_ADDR,res);
-		D2_temp = 0;
-		D2_temp = (res[2] << 16) |(res[1] << 8) | res[0];
+			usleep(20); // Max conversion time per datasheet
+		
+			i2c_smbus_read_block_data(file,MS5837_ADDR,res);
+			D2_temp = 0;
+			D2_temp = (res[0] << 16) |(res[1] << 8) | res[2];
+			cptTemp = 0;
+		}else{
+			++cptTemp;
+		}
 
 		calculate();
 	}
@@ -146,11 +130,9 @@ namespace sonia_common_cpp
 
 		//Second order compensation
 		if ( _model == MS5837_02BA ) {
-			if((TEMP/100)<20){         //Low temp
-				Ti = (11*int64_t(dT)*int64_t(dT))/(34359738368LL);
-				OFFi = (31*(TEMP-2000)*(TEMP-2000))/8;
-				SENSi = (63*(TEMP-2000)*(TEMP-2000))/32;
-			}
+			Ti = (11*int64_t(dT)*int64_t(dT))/(34359738368LL);
+			OFFi = (31*(TEMP-2000)*(TEMP-2000))/8;
+			SENSi = (63*(TEMP-2000)*(TEMP-2000))/32;
 		} else {
 			if((TEMP/100)<20){         //Low temp
 				Ti = (3*int64_t(dT)*int64_t(dT))/(8589934592LL);
@@ -200,7 +182,7 @@ namespace sonia_common_cpp
 	// In order to calculate the correct depth, the actual atmospheric pressure should be measured once in air, and
 	// that value should subtracted for subsequent depth calculations.
 	float MS5837::depth() {
-		return (pressure(MS5837::Pa)-101300)/(fluidDensity*9.80665);
+		return (pressure(MS5837::Pa)-101300)/(_fluidDensity*9.80665);
 	}
 
 	float MS5837::altitude() {

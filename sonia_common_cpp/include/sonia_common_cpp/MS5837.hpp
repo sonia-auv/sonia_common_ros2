@@ -53,8 +53,9 @@ namespace sonia_common_cpp
             const uint8_t MS5837_RESET = 0x1E;
             const uint8_t MS5837_ADC_READ = 0x00;
             const uint8_t MS5837_PROM_READ = 0xA0;
-            const uint8_t MS5837_CONVERT_D1_8192 = 0x4A;
-            const uint8_t MS5837_CONVERT_D2_8192 = 0x5A;
+            const uint8_t MS5837_CONVERT_D1_8192 = 0x48;
+            const uint8_t MS5837_CONVERT_D2_8192 = 0x58;
+            int cptTemp = 0;
 
             const float Pa = 100.0f;
             const float bar = 0.001f;
@@ -77,7 +78,7 @@ namespace sonia_common_cpp
             int32_t P;
             uint8_t _model;
 
-            float fluidDensity;
+            float _fluidDensity;
 
             /** Performs calculations per the sensor data sheet for conversion and
              *  second order compensation.
