@@ -16,26 +16,36 @@ namespace sonia_common_cpp
 		_fluidDensity = 1029;
 	}
 
-	bool MS5837::init(char *filename, int slave) {
-		file = open(filename, O_RDWR);
+	int MS5837::init(char *filename, int slave) {
+                int file;
+                int adapter_nr = 8; /* probably dynamically determined */
+                char filenames[20];
+
+                snprintf(filenames, 19, "/dev/i2c-8");
+		file = open(filenames, O_RDWR);
 		MS5837_ADDR = slave;
 
 		if (file < 0) {
 			perror("Failed to open the i2c bus");
-			exit(1);
+			return false;
+		}
+
+		// Set the port options and set the address of the device
+		if (ioctl(file, I2C_SLAVE, slave) < 0) {
+			perror("Failed to open the ioctl");
+			close(file);
+			return false;
 		}
 
 		// Reset the MS5837, per datasheet
-		i2c_smbus_write_byte(file,MS5837_RESET);
+		int succes = i2c_smbus_write_byte_data(file,slave,MS5837_RESET);
 		// Wait for reset to complete
 		usleep(10);
 
-		uint8_t res[3];
+		uint8_t res[64];
 		// Read calibration values and CRC
 		for ( uint8_t i = 0 ; i < 7 ; i++ ) {
-			i2c_smbus_write_byte(file,MS5837_PROM_READ+i*2);
-
-			i2c_smbus_read_block_data(file,MS5837_ADDR,res);
+                        i2c_smbus_read_block_data(file,MS5837_PROM_READ+i*2,res);
 			C[i] = (res[0] << 8) | res[1];
 		}
 
@@ -43,13 +53,23 @@ namespace sonia_common_cpp
 		uint8_t crcRead = C[0] >> 12;
 		uint8_t crcCalculated = crc4(C);
 
-		_model = MS5837_30BA;
-		
-		return true;
+		if (C[1] < MS5837_30BA_MIN_SENSITIVITY || C[1] > MS5837_02BA_MAX_SENSITIVITY)
+               	{
+	        	_model = MS5837_UNRECOGNISED;
+            	}
+        	else if (C[1] > MS5837_02BA_30BA_SEPARATION)
+        	{
+			_model = MS5837_02BA;
+		}
+		else
+		{
+			_model = MS5837_30BA;
+         	}
 
-		/*if ( crcCalculated != crcRead ) {
+		if ( crcCalculated != crcRead ) {
 			return false; // CRC fail
-		}*/
+		}
+                return true;
 	}
 
 	void MS5837::setModel(uint8_t model) {
@@ -64,13 +84,13 @@ namespace sonia_common_cpp
 		_fluidDensity = density;
 	}
 
-	void MS5837::read() {
+	int MS5837::read() {
 
-		uint8_t res[3];
+		uint8_t res[64];
 		//Check that _i2cPort is not NULL (i.e. has the user forgoten to call .init or .begin?)
 		if (file < 0)
 		{
-			return;
+			return 0;
 		}
 
 		// Request D1 conversion
@@ -79,17 +99,17 @@ namespace sonia_common_cpp
 
 		usleep(20); // Max conversion time per datasheet
 	
-		i2c_smbus_read_block_data(file,MS5837_ADDR,res);
+		int succes = i2c_smbus_read_block_data(file,MS5837_ADC_READ,res);
 
 		D1_pres = 0;
 		D1_pres = (res[0] << 16) |(res[1] << 8) | res[2];
-		if(cptTemp <=50){
+		if(cptTemp >= 50){
 			// Request D2 conversion
 			i2c_smbus_write_byte(file,MS5837_CONVERT_D2_8192);
 
 			usleep(20); // Max conversion time per datasheet
 		
-			i2c_smbus_read_block_data(file,MS5837_ADDR,res);
+			i2c_smbus_read_block_data(file,MS5837_ADC_READ,res);
 			D2_temp = 0;
 			D2_temp = (res[0] << 16) |(res[1] << 8) | res[2];
 			cptTemp = 0;
@@ -98,6 +118,7 @@ namespace sonia_common_cpp
 		}
 
 		calculate();
+                return succes;
 	}
 
 	void MS5837::calculate() {

@@ -1,7 +1,9 @@
 #pragma once
 extern "C"
 {
+#include <linux/i2c-dev.h>
 #include <linux/i2c.h>
+#include <sys/ioctl.h>
 #include <i2c/smbus.h>
 }
 #include <stdint.h>
@@ -14,7 +16,7 @@ namespace sonia_common_cpp
 
             MS5837();
 
-            bool init(char *filename, int slave);
+            int init(char *filename, int slave);
 
             /** Set model of MS5837 sensor. Valid options are MS5837::MS5837_30BA (default)
              * and MS5837::MS5837_02BA.
@@ -29,7 +31,7 @@ namespace sonia_common_cpp
 
             /** The read from I2C takes up to 40 ms, so use sparingly is possible.
              */
-            void read();
+            int read();
 
             /** Pressure returned in mbar or mbar*conversion rate.
              */
