@@ -32,7 +32,6 @@ namespace sonia_common_cpp
 			return false;
 		}
 
-
 		// Reset the MS5837, per datasheet
 		int succes = i2c_smbus_write_byte(file,MS5837_RESET);
 		// Wait for reset to complete
