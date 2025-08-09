@@ -25,6 +25,8 @@
 
 #pragma once
 
+#include "IConnection.hpp"
+
 #include <termios.h>
 #include <unistd.h>
 
@@ -32,8 +34,13 @@
 #include <string>
 namespace sonia_common_cpp
 {
+    struct SerialTram : ITramData
+    {
+        ssize_t size;
+        uint8_t* data;
+    };
 
-    class SerialConn
+    class SerialConn : public IConnection
     {
         public:
         const int BUFFER_SIZE = 1024;
@@ -66,6 +73,8 @@ namespace sonia_common_cpp
         /// @return Status of the received packaet as a byte code.
         ssize_t ReadPackets(size_t count, uint8_t *pData);
 
+        ssize_t Read(ITramData &tram);
+
         /// @brief Read one packet from the serial stream.
         /// @param pData Char array to store the data.
         /// @param offset Stream offset.
@@ -78,6 +87,8 @@ namespace sonia_common_cpp
         /// @param data The data to send as a string.
         /// @return Byte Status code.
         ssize_t Transmit(std::string data);
+
+        ssize_t Transmit(const ITramData &tram);
 
         /// @brief Transmit data to the stream using a char array
         /// @param pData Char data array to send.

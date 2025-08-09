@@ -1,4 +1,5 @@
 #pragma once
+#include "IConnection.hpp"
 #include <unistd.h>
 #include <string>
 
@@ -12,7 +13,13 @@ extern "C"
 
 namespace sonia_common_cpp
 {
-    class I2CConn
+    struct I2CTram : ITramData
+    {
+        uint8_t cmd;
+        ssize_t size;
+        uint8_t* data;
+    };
+    class I2CConn : public IConnection
     {
         public:
         I2CConn(std::string port, int slave);
@@ -20,9 +27,9 @@ namespace sonia_common_cpp
 
         bool OpenPort();
 
-        ssize_t Read(uint8_t cmd, uint8_t* data);
+        ssize_t Read(I2CTram tram);
 
-        ssize_t Transmit(uint8_t cmd, uint8_t size, uint8_t* data);
+        ssize_t Transmit(const I2CTram tram);
 
         private:
         std::string _addr;

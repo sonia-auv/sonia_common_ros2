@@ -23,11 +23,12 @@ namespace sonia_common_cpp
         return true;
     }
 
-    ssize_t I2CConn::Read(uint8_t cmd, uint8_t* data) {
-        return i2c_smbus_read_block_data(_port, cmd, data);
+    ssize_t I2CConn::Read(I2CTram tram) {
+        tram.size = i2c_smbus_read_block_data(_port, tram.cmd, tram.data);
+        return tram.size;
     }
 
-    ssize_t I2CConn::Transmit(uint8_t cmd, uint8_t size, uint8_t* data) {
-        return i2c_smbus_write_block_data(_port, cmd, size, data);
+    ssize_t I2CConn::Transmit(const I2CTram tram) {
+        return i2c_smbus_write_block_data(_port, tram.cmd, tram.size, tram.data);
     }
 }  // namespace sonia_common_cpp
