@@ -29,16 +29,12 @@ namespace sonia_common_cpp
 
     ssize_t SerialConn::Read(ITramData& tram)
     {
-        std::cout << "READ1" << std::endl;
         SerialTram st_tram = dynamic_cast<SerialTram&>(tram);
-        std::cout << "READ2" << std::endl;
         // tram = (SerialTram)tram;
-        st_tram.data.assign(st_tram.size, 0);
-        std::cout << "READ3" << std::endl;
+        st_tram.data.resize(st_tram.size);  
         _lock.lock();
         ssize_t ret = read(_fd, (st_tram.data.data() + st_tram.offset), st_tram.size);
         _lock.unlock();
-        std::cout << "READ4" << std::endl;
         return ret;
     }
 
