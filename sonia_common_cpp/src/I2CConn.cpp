@@ -23,12 +23,14 @@ namespace sonia_common_cpp
         return true;
     }
 
-    ssize_t I2CConn::Read(I2CTram tram) {
-        tram.size = i2c_smbus_read_block_data(_port, tram.cmd, tram.data);
+    ssize_t I2CConn::Read(I2CTram &tram) {
+        I2CTram* i2c_tram = dynamic_cast<I2CTram*>(&tram);
+        i2c_tram->size = i2c_smbus_read_block_data(_port, i2c_tram->cmd, i2c_tram->data);
         return tram.size;
     }
 
-    ssize_t I2CConn::Transmit(const I2CTram tram) {
-        return i2c_smbus_write_block_data(_port, tram.cmd, tram.size, tram.data);
+    ssize_t I2CConn::Transmit(const I2CTram &tram) {
+        const I2CTram* i2c_tram = dynamic_cast<const I2CTram*>(&tram);
+        return i2c_smbus_write_block_data(_port, i2c_tram->cmd, i2c_tram->size, i2c_tram->data);
     }
 }  // namespace sonia_common_cpp

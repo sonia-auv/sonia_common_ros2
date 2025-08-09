@@ -29,7 +29,7 @@
 
 #include <termios.h>
 #include <unistd.h>
-
+#include <vector>
 #include <mutex>
 #include <string>
 namespace sonia_common_cpp
@@ -37,7 +37,8 @@ namespace sonia_common_cpp
     struct SerialTram : ITramData
     {
         ssize_t size;
-        uint8_t* data;
+        std::vector<uint8_t> data;
+        uint8_t offset = 0;
     };
 
     class SerialConn : public IConnection
@@ -73,7 +74,7 @@ namespace sonia_common_cpp
         /// @return Status of the received packaet as a byte code.
         ssize_t ReadPackets(size_t count, uint8_t *pData);
 
-        ssize_t Read(ITramData &tram);
+        ssize_t Read(ITramData &tram) override;
 
         /// @brief Read one packet from the serial stream.
         /// @param pData Char array to store the data.
@@ -88,7 +89,7 @@ namespace sonia_common_cpp
         /// @return Byte Status code.
         ssize_t Transmit(std::string data);
 
-        ssize_t Transmit(const ITramData &tram);
+        ssize_t Transmit(const ITramData &tram) override;
 
         /// @brief Transmit data to the stream using a char array
         /// @param pData Char data array to send.
@@ -96,7 +97,7 @@ namespace sonia_common_cpp
         /// @return Byte Status Code.
         ssize_t Transmit(const uint8_t *pData, size_t length);
 
-        bool OpenPort();
+        bool OpenPort() override;
 
         private:
         /// @brief Configurations for the device
