@@ -6,20 +6,14 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
-os.environ["AUV"] = "AUV8"
+os.environ["AUV"] = "LITE1"
 def generate_launch_description():
     imu_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('imu_port_manager'), 'launch'),
             '/launch.py'])
         )
-
-    dvl_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('dvl_port_manager'), 'launch'),
-            '/launch.py'])
-        )
-    
+   
     depth_launch = IncludeLaunchDescription(
        PythonLaunchDescriptionSource([os.path.join(
            get_package_share_directory('depth_port_manager'), 'launch'),
@@ -43,12 +37,6 @@ def generate_launch_description():
             get_package_share_directory('proc_planner_ros2'), 'launch'),
             '/launch.py'])
         )
-
-    cam_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('cam_port_manager'), 'launch'),
-            '/launch.py'])
-        )
     zed_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('zed_wrapper'), 'launch'),
@@ -57,11 +45,9 @@ def generate_launch_description():
     
     return LaunchDescription([
         imu_launch,
-        dvl_launch,
         depth_launch,
         rs485_launch,
         proc_control_launch,
-        cam_launch,
         zed_launch,
         proc_planner_launch
     ])
