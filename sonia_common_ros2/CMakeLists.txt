@@ -36,10 +36,12 @@ install(DIRECTORY
 
 file(GLOB msg_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg")
 file(GLOB srv_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv")
+file(GLOB action_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/action/*.action")
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
+  ${action_files}
   # "srv/AddThreeInts.srv"
   DEPENDENCIES geometry_msgs std_msgs builtin_interfaces# Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
