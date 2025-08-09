@@ -54,7 +54,7 @@ namespace sonia_common_cpp
 			return succes; // CRC fail
 		}
 		cptTemp =50;
-                return true;
+		return true;
 	}
 
 	void MS5837::setModel(uint8_t model) {
