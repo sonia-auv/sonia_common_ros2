@@ -2,6 +2,7 @@
 #include "IConnection.hpp"
 #include <unistd.h>
 #include <string>
+#include <vector>
 
 extern "C"
 {
@@ -17,7 +18,7 @@ namespace sonia_common_cpp
     {
         uint8_t cmd;
         ssize_t size;
-        uint8_t* data;
+        std::vector<u_int8_t> data;
     };
 
     class I2CConn : public IConnection
