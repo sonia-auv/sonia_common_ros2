@@ -66,7 +66,7 @@ namespace sonia_common_cpp
 
     ssize_t SerialConn::Transmit(const ITramData &tram)
     {
-        const SerialTram st_tram = dynamic_cast<const SerialTram&>(tram);
+        const SerialTram& st_tram = dynamic_cast<const SerialTram&>(tram);
         _lock.lock();
         ssize_t ret = write(_fd, st_tram.data.data(), st_tram.size);
         _lock.unlock();
