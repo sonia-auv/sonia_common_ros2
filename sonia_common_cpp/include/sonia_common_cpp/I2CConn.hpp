@@ -18,7 +18,7 @@ namespace sonia_common_cpp
     {
         uint8_t cmd;
         ssize_t size;
-        std::vector<u_int8_t> data;
+        std::vector<uint8_t> data;
     };
 
     class I2CConn : public IConnection
@@ -27,11 +27,11 @@ namespace sonia_common_cpp
         I2CConn(std::string port, int slave);
         ~I2CConn() = default;
 
-        bool OpenPort();
+        bool OpenPort() override;
 
-        ssize_t Read(I2CTram &tram);
+        ssize_t Read(ITramData &tram) override;
 
-        ssize_t Transmit(const I2CTram &tram);
+        ssize_t Transmit(const ITramData &tram) override;
 
         private:
         std::string _addr;
