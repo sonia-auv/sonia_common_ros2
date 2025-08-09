@@ -31,6 +31,10 @@ namespace sonia_common_cpp
 
     ssize_t I2CConn::Transmit(const ITramData &tram) {
         const I2CTram& i2c_tram = dynamic_cast<const I2CTram&>(tram);
+        if (i2c_tram.size == 0)
+        {
+            return i2c_smbus_write_byte(_port, i2c_tram.cmd);
+        }
         return i2c_smbus_write_block_data(_port, i2c_tram.cmd, i2c_tram.size, i2c_tram.data.data());
     }
 }  // namespace sonia_common_cpp
