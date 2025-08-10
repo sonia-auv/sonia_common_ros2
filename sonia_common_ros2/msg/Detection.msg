@@ -7,6 +7,9 @@ float32 confidence
 #Distance to object
 float64 distance
 
+#ID of the frame
+string frame_id
+
 # 2D bounding box surrounding the object.
 float64 top_left_x
 float64 top_left_y
