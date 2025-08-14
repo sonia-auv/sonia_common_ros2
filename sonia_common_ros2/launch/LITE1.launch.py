@@ -42,6 +42,11 @@ def generate_launch_description():
             get_package_share_directory('zed_wrapper'), 'launch'),
             '/launch.py'])
         )
+    sonia_bt_runner_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('sonia_bt_runner'), 'launch'),
+            '/launch.py'])
+        )
     
     return LaunchDescription([
         imu_launch,
@@ -49,5 +54,6 @@ def generate_launch_description():
         rs485_launch,
         proc_control_launch,
         zed_launch,
-        proc_planner_launch
+        proc_planner_launch,
+        sonia_bt_runner_launch
     ])
