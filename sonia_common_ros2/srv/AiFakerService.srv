@@ -1,0 +1,14 @@
+sonia_common_ros2/Detection detection
+
+uint8 CAM_FRONT=0
+uint8 CAM_BOTTOM=1
+
+uint8 cam
+
+int32 frame_count   # Number of frames detected
+
+float64 frame_delay # Time between frames in seconds
+
+float64 jitter      # variation around each point
+---
+bool success
