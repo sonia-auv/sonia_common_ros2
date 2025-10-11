@@ -7,6 +7,12 @@ float32 confidence
 #Distance to object
 float64 distance
 
+#Angle to align
+float64 angle_alpha
+float64 distance_beta
+float64 angle_teta
+float64 distance_teta
+
 #ID of the frame
 string frame_id
 
