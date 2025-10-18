@@ -12,12 +12,12 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+      - uses: docker/setup-docker-action@v4
       - uses: actions/checkout@v4
         with:
           repository: sonia-auv/docker_ci 
           # TODO: Should be changed to develop
           ref: build_sonia_bt_runner_and_common
       - name: Running
-        working-directory: ./docker_ci
         run: |
-          ./docker_ci/scripts/ci.sh sonia_common_ros2 $BRANCH_NAME
+          ./scripts/ci.sh sonia_common_ros2 $BRANCH_NAME
