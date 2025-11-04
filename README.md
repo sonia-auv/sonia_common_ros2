@@ -6,29 +6,29 @@ The project regroups all of sonia's common dependencies. These include, dependen
 
 ## sonia_common_cpp
 
-This project contains all custom **C++** dependencies for sonia projects
+This project contains custom **C++** dependencies for sonia projects
 
 ---
 
 ## sonia_common_py
 
-This project contains all custom **Python** dependencies for sonia projects
+This project contains custom **Python** dependencies for sonia projects
 
 ---
 
 ## sonia_common_ros2
 
-This directory contains all custom **ROS2** dependencies for sonia projects
+This directory contains all custom **ROS2** files for sonia projects.
 
-### action
+### action/
 
 This directory contains all custom ROS 2 action files (**.action**) defining asynchronous tasks and goal/feedback/result structures used by the nodes in this package.
 
-### msg
+### msg/
 
 This directory contains all custom ROS 2 message files (**.msg**) that define the data structures exchanged between nodes in this project.
 
-### srv
+### srv/
 
 This directory contains all custom ROS 2 service files (**.srv**) that define request–response interactions used by the nodes in this package
 
