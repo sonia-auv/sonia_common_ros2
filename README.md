@@ -18,15 +18,19 @@ This project contains all custom **Python** dependencies for sonia projects
 
 ## sonia_common_ros2
 
-This project contains all custom **ROS2** dependencies for sonia projects
+This directory contains all custom **ROS2** dependencies for sonia projects
 
 ### action
 
-custom action files used in sonia projects
+This directory contains all custom ROS 2 action files (**.action**) defining asynchronous tasks and goal/feedback/result structures used by the nodes in this package.
 
 ### msg
 
+This directory contains all custom ROS 2 message files (**.msg**) that define the data structures exchanged between nodes in this project.
+
 ### srv
+
+This directory contains all custom ROS 2 service files (**.srv**) that define request–response interactions used by the nodes in this package
 
 ---
 
