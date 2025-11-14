@@ -6,3 +6,4 @@ uint8 BOTH = 3
 uint8 camera_choice
 int8 model_choice
 ---
+string model_name
