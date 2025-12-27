@@ -1,4 +1,4 @@
-# options for quality
+# options for state
 uint8 STATE_UNKNOWN = 0
 uint8 STATE_INITIALIZING = 1 
 uint8 STATE_RUNNING = 2
