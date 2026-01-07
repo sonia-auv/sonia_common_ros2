@@ -7,8 +7,7 @@ uint8 STATE_IDLE = 3
 # options for quality
 uint8 Q_UNKNOWN = 0
 uint8 Q_OK = 1
-uint8 Q_WARN = 2
-uint8 Q_ERROR = 3
+uint8 Q_DEGRADE = 2
 
 builtin_interfaces/Time stamp
 uint8 state
