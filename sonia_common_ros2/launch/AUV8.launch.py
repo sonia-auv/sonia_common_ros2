@@ -64,6 +64,11 @@ def generate_launch_description():
             get_package_share_directory('proc_vision_ros2'), 'launch'),
             '/launch.py'])
         )
+    sonia_deploy_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('sonia_deploy'), 'launch'),
+            '/launch.py'])
+        )
     
     return LaunchDescription([
         imu_launch,
@@ -75,5 +80,6 @@ def generate_launch_description():
         zed_launch,
         proc_planner_launch,
         sonia_bt_runner_launch,
+        sonia_deploy_launch,
         proc_vision_launch
     ])
