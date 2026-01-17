@@ -25,15 +25,23 @@
 
 #pragma once
 
+#include "IConnection.hpp"
+
 #include <termios.h>
 #include <unistd.h>
-
+#include <vector>
 #include <mutex>
 #include <string>
 namespace sonia_common_cpp
 {
+    struct SerialTram : ITramData
+    {
+        ssize_t size;
+        std::vector<uint8_t> data;
+        uint8_t offset = 0;
+    };
 
-    class SerialConn
+    class SerialConn : public IConnection
     {
         public:
         const int BUFFER_SIZE = 1024;
@@ -66,6 +74,8 @@ namespace sonia_common_cpp
         /// @return Status of the received packaet as a byte code.
         ssize_t ReadPackets(size_t count, uint8_t *pData);
 
+        ssize_t Read(ITramData &tram) override;
+
         /// @brief Read one packet from the serial stream.
         /// @param pData Char array to store the data.
         /// @param offset Stream offset.
@@ -79,13 +89,15 @@ namespace sonia_common_cpp
         /// @return Byte Status code.
         ssize_t Transmit(std::string data);
 
+        ssize_t Transmit(const ITramData &tram) override;
+
         /// @brief Transmit data to the stream using a char array
         /// @param pData Char data array to send.
         /// @param length Length of the data array.
         /// @return Byte Status Code.
         ssize_t Transmit(const uint8_t *pData, size_t length);
 
-        bool OpenPort();
+        bool OpenPort() override;
 
         private:
         /// @brief Configurations for the device

@@ -7,6 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+# find_package(libi2c REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -27,6 +28,10 @@ target_include_directories(
 install(
   DIRECTORY include/
   DESTINATION include
+)
+
+target_link_libraries(${PROJECT_NAME} 
+  i2c
 )
 
 install(
