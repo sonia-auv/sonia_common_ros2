@@ -9,4 +9,6 @@ DOCKER_CI_DIR=$1
 
 cd sonia_common_ros2
 
+sudo apt install -y libi2c-dev
+
 colcon build --cmake-force-configure --install INSTALL_BASE
