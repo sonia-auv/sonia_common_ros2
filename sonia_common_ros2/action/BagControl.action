@@ -1,0 +1,11 @@
+#Goal
+string cmd
+string filename
+string[] topic_list
+
+---
+#Result
+bool success
+---
+#Feedback
+bool is_alive
