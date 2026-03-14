@@ -9,5 +9,5 @@ string filename
 string[] topic_list
 
 ---
-#Result
-string state
+#Response
+string message
