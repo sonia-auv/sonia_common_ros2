@@ -33,7 +33,7 @@ def generate_launch_description():
         )
     
     return LaunchDescription([
-        #proc_control_launch,
+        proc_control_launch,
         proc_planner_launch,
         endpoint,
         sonia_monitor_launch
