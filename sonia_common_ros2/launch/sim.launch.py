@@ -26,9 +26,15 @@ def generate_launch_description():
             get_package_share_directory('ros_tcp_endpoint'), 'launch'),
             '/endpoint.py'])
         )
+    sonia_monitor_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('sonia_monitor'), 'launch'),
+            '/launch.py'])
+        )
     
     return LaunchDescription([
         proc_control_launch,
         proc_planner_launch,
         endpoint,
+        sonia_monitor_launch
     ])
