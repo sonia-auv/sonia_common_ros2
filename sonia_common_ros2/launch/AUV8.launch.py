@@ -69,6 +69,11 @@ def generate_launch_description():
             get_package_share_directory('sonia_monitor'), 'launch'),
             '/launch.py'])
         )
+    sonia_blackbox_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('sonia_blackbox'), 'launch'),
+            '/launch.py'])
+        )
     
     return LaunchDescription([
         imu_launch,
@@ -81,5 +86,6 @@ def generate_launch_description():
         proc_planner_launch,
         sonia_bt_runner_launch,
         sonia_monitor_launch,
-        proc_vision_launch
+        proc_vision_launch,
+        sonia_blackbox_launch
     ])
