@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'pyserial'],
     zip_safe=True,
     maintainer='root',
     maintainer_email='nimai.jariwala.1@ens.etsmtl.ca',
@@ -20,7 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "talker = sonia_common_py.publisher_member_function:main",
         ],
     },
 )

@@ -1,0 +1,10 @@
+#Goal
+string mission
+---
+#Result
+bool success
+---
+#Feedback
+string status
+string node_name
+uint16 uid

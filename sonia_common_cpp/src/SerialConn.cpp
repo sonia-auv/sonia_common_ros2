@@ -1,104 +1,134 @@
-#include "SerialConn.h"
+#include "SerialConn.hpp"
+
 #include <fcntl.h>
 #include <unistd.h>
+#include <iostream>
 
-SerialConn::SerialConn(std::string port, speed_t baud) :
-    m_port(port), m_baud(baud), m_is_blocking(true)
+namespace sonia_common_cpp
 {
-}
+    SerialConn::SerialConn(std::string port, speed_t baud) : _port(port), _baud(baud), _isBlocking(true) {}
 
-SerialConn::SerialConn(std::string port, speed_t baud, bool isBlocking) :
-    m_port(port), m_baud(baud), m_is_blocking(isBlocking)
-{
-}
+    SerialConn::SerialConn(std::string port, speed_t baud, bool isBlocking)
+        : _port(port), _baud(baud), _isBlocking(isBlocking)
+    {}
 
-SerialConn::~SerialConn()
-{
-    // Close port on destruction.
-    close(m_fd);
-}
-
-ssize_t SerialConn::ReadPackets(size_t count, char *pData)
-{
-    pData[0] = 0;
-
-    return read(m_fd, pData, count);
-}
-
-ssize_t SerialConn::ReadOnce(char *pData, int offset)
-{
-    return read(m_fd, (pData + offset), 1);
-}
-
-void SerialConn::Flush()
-{
-    tcflush(m_fd, TCIOFLUSH);
-}
-
-ssize_t SerialConn::Transmit(const std::string data)
-{
-    return write(m_fd, data.c_str(), data.size());
-}
-
-ssize_t SerialConn::Transmit(const char *pData, size_t length)
-{
-    return write(m_fd, pData, length);
-}
-
-bool SerialConn::OpenPort()
-{
-    /*
-    O_RDWR: Read and write
-    O_NOCTTY: No control TTY
-    O_NDELAY: Non-blocking mode.
-    */
-    if (m_is_blocking)
+    SerialConn::~SerialConn()
     {
-        m_fd = open(m_port.c_str(), O_RDWR | O_NOCTTY);
-    }
-    else
-    {
-        m_fd = open(m_port.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
+        // Close port on destruction.
+        close(_fd);
     }
 
-    if (m_fd == -1)
+    ssize_t SerialConn::ReadPackets(size_t count, uint8_t *pData)
     {
-        return false;
+        pData[0] = 0;
+        _lock.lock();
+        ssize_t ret = read(_fd, pData, count);
+        _lock.unlock();
+        return ret;
     }
 
-    if (!m_is_blocking)
+    ssize_t SerialConn::Read(ITramData& tram)
     {
-        fcntl(m_fd, F_SETFL, O_NDELAY);
+        SerialTram& st_tram = dynamic_cast<SerialTram&>(tram);
+        // tram = (SerialTram)tram;
+        st_tram.data.resize(st_tram.size);  
+        _lock.lock();
+        ssize_t ret = read(_fd, (st_tram.data.data() + st_tram.offset), st_tram.data.size());
+        _lock.unlock();
+        return ret;
     }
 
-    // Get the options object from the port.
-    tcgetattr(m_fd, &m_options);
+    ssize_t SerialConn::ReadOnce(uint8_t *pData, int offset)
+    {
+        _lock.lock();
+        ssize_t ret = read(_fd, (pData + offset), 1);
+        _lock.unlock();
+        return ret;
+    }
 
-    // Set the baud rate
-    cfsetispeed(&m_options, m_baud);
-    cfsetospeed(&m_options, m_baud);
+    void SerialConn::Flush() const { tcflush(_fd, TCIOFLUSH); }
 
-    // Hardware control of the terminal
-    // flags defined here: https://www.ibm.com/docs/en/aix/7.1?topic=files-termiosh-file
-    m_options.c_cflag |= (CLOCAL | CREAD); // Specify local ligne (local direct connection), Enables receiver
-    m_options.c_cflag &= ~CSIZE;           // Remove set character size
-    m_options.c_cflag |= CS8;              // Set character size to 8 bits
+    ssize_t SerialConn::Transmit(const std::string data)
+    {
+        _lock.lock();
+        ssize_t ret = write(_fd, data.c_str(), data.size());
+        _lock.unlock();
+        return ret;
+    }
 
-    m_options.c_cflag &= ~(PARENB | PARODD); // Disable parity, specify even paraity
-    m_options.c_cflag &= ~CSTOPB;            // remove specified number stop bits. This sets the default of 1 stop bit.
-    m_options.c_cflag &= ~CRTSCTS;           // Disable flow control
+    ssize_t SerialConn::Transmit(const uint8_t *pData, size_t length)
+    {
+        _lock.lock();
+        ssize_t ret = write(_fd, pData, length);
+        _lock.unlock();
+        return ret;
+    }
 
-    // Input Flags
-    m_options.c_iflag &= ~IGNBRK; // Do not ignore break conditions
-    m_options.c_iflag &= ~(IXON | IXOFF | IXANY); // disable start and stop output control, Disable start-and-stop input control, disable any char to restart output.
+    ssize_t SerialConn::Transmit(const ITramData &tram)
+    {
+        const SerialTram& st_tram = dynamic_cast<const SerialTram&>(tram);
+        _lock.lock();
+        ssize_t ret = write(_fd, st_tram.data.data(), st_tram.size);
+        _lock.unlock();
+        return ret;
+    }
 
-    // Local Flags
-    m_options.c_lflag = 0;
+    bool SerialConn::OpenPort()
+    {
+        /*
+        O_RDWR: Read and write
+        O_NOCTTY: No control TTY
+        O_NDELAY: Non-blocking mode.
+        */
+        if (_isBlocking)
+        {
+            _fd = open(_port.c_str(), O_RDWR | O_NOCTTY);
+        }
+        else
+        {
+            _fd = open(_port.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
+        }
 
-    // Output Flags
-    m_options.c_oflag = 0;
+        if (_fd == -1)
+        {
+            return false;
+        }
 
-    // Set the new options to the port.
-    tcsetattr(m_fd, TCSANOW, &m_options);
-    return true;
-}
+        if (!_isBlocking)
+        {
+            fcntl(_fd, F_SETFL, O_NDELAY);
+        }
+
+        // Get the options object from the port.
+        tcgetattr(_fd, &_options);
+
+        // Set the baud rate
+        cfsetispeed(&_options, _baud);
+        cfsetospeed(&_options, _baud);
+
+        // Hardware control of the terminal
+        // flags defined here: https://www.ibm.com/docs/en/aix/7.1?topic=files-termiosh-file
+        _options.c_cflag |= (CLOCAL | CREAD);  // Specify local ligne (local direct connection), Enables receiver
+        _options.c_cflag &= ~CSIZE;            // Remove set character size
+        _options.c_cflag |= CS8;               // Set character size to 8 bits
+
+        _options.c_cflag &= ~(PARENB | PARODD);  // Disable parity, specify even paraity
+        _options.c_cflag &= ~CSTOPB;   // remove specified number stop bits. This sets the default of 1 stop bit.
+        _options.c_cflag &= ~CRTSCTS;  // Disable flow control
+
+        // Input Flags
+        _options.c_iflag &= ~IGNBRK;                  // Do not ignore break conditions
+        _options.c_iflag &= ~(IXON | IXOFF | IXANY);  // disable start and stop output control, Disable start-and-stop
+                                                      // input control, disable any char to restart output.
+
+        // Local Flags
+        _options.c_lflag = 0;
+
+        // Output Flags
+        _options.c_oflag = 0;
+
+        // Set the new options to the port.
+        tcsetattr(_fd, TCSANOW, &_options);
+        return true;
+    }
+}  // namespace sonia_common_cpp
