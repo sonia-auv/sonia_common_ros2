@@ -7,17 +7,44 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   "msg/Num.msg"
-#   "msg/Sphere.msg"
-#   "srv/AddThreeInts.srv"
-#   DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
-# )
+# add_executable(global_parameter_server src/global_parameter_server_node.cpp)
+# ament_target_dependencies(global_parameter_server rclcpp)
+
+install(TARGETS
+  # global_parameter_server
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+file(GLOB msg_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg")
+file(GLOB srv_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv")
+file(GLOB action_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/action/*.action")
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
+  # "srv/AddThreeInts.srv"
+  DEPENDENCIES geometry_msgs std_msgs builtin_interfaces# Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

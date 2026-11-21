@@ -7,14 +7,43 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+# find_package(libi2c REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-install(DIRECTORY
-  "include/sonia_common_cpp"
-  DESTINATION .
+file(GLOB SOURCES src/*.cpp)
+
+add_library(
+  ${PROJECT_NAME} SHARED
+  ${SOURCES}
 )
+
+target_include_directories(
+  ${PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}>
+  $<INSTALL_INTERFACE:include>
+)
+
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
+target_link_libraries(${PROJECT_NAME} 
+  i2c
+)
+
+install(
+  TARGETS ${PROJECT_NAME}
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+  INCLUDES DESTINATION include
+)
+
+ament_export_include_directories(include)
+ament_export_libraries(${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
